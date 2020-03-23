@@ -1,0 +1,1 @@
+{"result":{"text":"R subscript T M end subscript space equals space 300 space left parenthesis capital omega right parenthesis"},"status":"ok"}

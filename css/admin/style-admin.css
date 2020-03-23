@@ -1,0 +1,140 @@
+.main-cover {
+    padding: 0 20px;
+}
+
+img.flag-icon-lang {
+    width: 20px;
+    height: 14px;
+}
+img.flag-icon-add {
+    width: 20px;
+    height: 20px;
+}
+td.col-question img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+}
+.p0{
+    padding: 0;
+}
+.col-content-left {
+    width: 67%;
+    float: left;
+}
+.col-content-right {
+    width: 30%;
+    float: right;
+}
+
+input#txtnamenews,
+textarea#editor1 {
+    width: 100%;
+}
+
+.sidebar ul li {
+    display: inherit !important;
+}
+
+.sidebar ul {
+    padding-left: 0;
+}
+
+img#blah {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.related_news_ta {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.related_news_btn {
+    margin-top: 35px;
+}
+
+#modal_dstin .modal-dialog {
+    width: 90%;
+}
+
+.modal-header-dstin{
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.model_search {
+    margin: 20px 0 0 0;
+}
+
+div#modal_body {
+    max-height: 480px;
+    overflow: auto;
+}
+
+table.manage_new {
+    font-size: 13px;
+}
+
+.ta-c.new_avatar img {
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.ta-c.new_create_date {
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ta-c.new_catagory {
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+}
+
+td.new_title {
+    vertical-align: middle !important;
+}
+
+.ta-c.new_pos {
+    max-width: 60px;
+    width: 60px;
+    padding: 0 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ta-c.new_pos input {
+    text-align: center;
+    font-weight: 600;
+    color: #fd430b;
+}
+
+td.ta-c.news_delete {
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+    color: #0a9bf1;
+}
+
+div#related_news {
+    background: #fff;
+    height: 100px;
+    padding: 5px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+table.manage_new {
+    color: #111;
+}
+
+td.ta-c.luu {
+    text-align: center;
+    vertical-align: middle;
+}

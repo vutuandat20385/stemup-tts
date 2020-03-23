@@ -1,0 +1,1 @@
+{"result":{"text":"open vertical bar A close vertical bar space equals space open vertical bar B close vertical bar space left right double arrow A space equals space B space"},"status":"ok"}

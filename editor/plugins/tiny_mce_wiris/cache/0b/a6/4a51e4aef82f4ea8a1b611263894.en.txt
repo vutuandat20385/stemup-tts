@@ -1,0 +1,1 @@
+{"result":{"text":"square root of A space square root of B space equals space 0 space left right double arrow open curly brackets table attributes columnalign left columnspacing 1.4ex end attributes row cell A equals space 0 end cell blank row cell B space equals space 0 end cell blank end table close"},"status":"ok"}

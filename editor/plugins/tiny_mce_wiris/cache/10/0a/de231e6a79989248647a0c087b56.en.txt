@@ -1,0 +1,1 @@
+{"result":{"text":"A sin fraction numerator 2 pi d subscript 1 over denominator lambda end fraction v à space A cos fraction numerator 2 pi d subscript 2 over denominator lambda end fraction"},"status":"ok"}

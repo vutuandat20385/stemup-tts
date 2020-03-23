@@ -1,0 +1,1 @@
+{"result":{"text":"v equals S over t semicolon space omega equals phi over t semicolon space omega equals V r"},"status":"ok"}

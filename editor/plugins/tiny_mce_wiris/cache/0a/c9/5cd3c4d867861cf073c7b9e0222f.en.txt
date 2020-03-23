@@ -1,0 +1,1 @@
+{"result":{"text":"a subscript h t end subscript equals 1 comma 85.10 to the power of negative 4 end exponent m divided by s squared"},"status":"ok"}

@@ -1,0 +1,5 @@
+$logged_in=$this->session->userdata('logged_in');
+$acp=explode(',',$logged_in['study_material']);
+if(!in_array('List',$acp){
+exit('permission denied');			
+}

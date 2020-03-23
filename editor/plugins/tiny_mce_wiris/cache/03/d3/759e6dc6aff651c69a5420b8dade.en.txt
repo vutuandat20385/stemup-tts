@@ -1,0 +1,1 @@
+{"result":{"text":"omega subscript 1 comma space omega subscript 2"},"status":"ok"}

@@ -1,0 +1,1 @@
+{"result":{"text":"space a space equals space 8 m divided by s squared semicolon space v space equals space space 1 m divided by s"},"status":"ok"}

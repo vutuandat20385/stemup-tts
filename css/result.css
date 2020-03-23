@@ -1,0 +1,54 @@
+.container {
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  
+  .noprint{
+  
+    display:block; 
+    margin:auto;
+  }
+.row.noprint {
+    width: 80%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+  @media screen and (max-width: 767px){
+    .mobile_numinfo{
+       font-size: 18px;
+    }
+    .carousel-Quizz li {
+
+    border: solid 1px #515151;
+    color: #515151;
+    border-radius: 4px;
+    display: inline;
+    padding: 4px 8px;
+
+    }
+    .bg-quizz1 {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    .row.dtmt10, .row.MB20.twopt {
+        padding-left: 15px;
+    }
+    .slide1 {
+        padding-bottom: 0;
+    }
+    #mainqtatt {
+       margin-bottom: 0;
+    }
+    .row.noprint {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section#lienhe {
+        padding: 10px;
+    }
+
+  }
+  input.mobile-radio-opt {
+      display: none;
+    }

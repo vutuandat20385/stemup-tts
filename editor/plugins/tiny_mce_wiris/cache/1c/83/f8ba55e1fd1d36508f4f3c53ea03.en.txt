@@ -1,0 +1,1 @@
+{"result":{"text":"W subscript t equals bevelled 1 half m omega A squared"},"status":"ok"}

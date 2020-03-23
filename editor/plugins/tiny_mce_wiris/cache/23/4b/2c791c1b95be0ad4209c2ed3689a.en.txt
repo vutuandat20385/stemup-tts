@@ -1,0 +1,1 @@
+{"result":{"text":"number space W equals fraction numerator Q squared over denominator 2 C end fraction"},"status":"ok"}

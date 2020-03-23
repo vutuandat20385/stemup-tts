@@ -1,0 +1,1 @@
+{"result":{"text":"4 comma 3.10 to the power of negative 6 end exponent r a d divided by s"},"status":"ok"}

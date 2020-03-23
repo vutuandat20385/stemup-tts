@@ -1,0 +1,1 @@
+{"result":{"text":"equals 100 m space divided by space s squared"},"status":"ok"}

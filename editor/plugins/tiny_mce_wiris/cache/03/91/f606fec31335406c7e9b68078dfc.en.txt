@@ -1,0 +1,1 @@
+{"result":{"text":"X to the power of a X to the power of a space x space X to the power of A Y."},"status":"ok"}

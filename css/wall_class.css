@@ -1,0 +1,224 @@
+.div-main {
+    margin-top: 60px;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #286090;
+    object-fit: cover;
+}
+.comment-avatar img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #286090;
+    object-fit: cover;
+}
+.post-discussion {
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 20px;
+}
+.user-info a {
+    font-size: 17px;
+    font-weight: bold;
+}
+.p-head {
+    height: 70px;
+    padding-top: 10px;
+    border-bottom: 2px solid #e9ebee;
+    background: #fff;
+}
+.post-discussion-comment {
+
+    margin-top: 10px;
+    padding-right: 0;
+}
+.post-discussion-content {
+    background: #fff;
+    padding: 15px;
+}
+.user-comment {
+    background: #fff;
+    border-radius: 8px;
+    font-weight: normal;
+    font-size: 15px;
+    color: #111;
+}
+.comment {
+    margin-bottom: 10px;
+    padding-right: 0;
+    padding-left: 0;
+}
+.user-info {
+    padding-right: 0;
+}
+.avatar.col-md-1 {
+    margin-right: 0px;
+    padding: 0;
+    padding-left: 5px;
+}
+a.answer {
+    padding: 5px 20px;
+    background: #286090;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.new- {
+    width: 100%;
+    text-align: right;
+    padding: 10px 0;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    font-size: 15px;
+    color: #fff;
+    background: #286090;
+    border: none;
+}
+.content {
+    margin-top: 10px;
+}
+.star {
+    color: #f6921e;
+    text-align: right;
+}
+
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5bc0de;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 10px 16px;
+    color: white;
+}
+button#myBtn {
+    border: none;
+    background: #286090;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+button#myBtn:hover {
+    background: #f6921e;
+}
+.comment-line {
+    padding-left: 30px;
+    margin: 10px 0;
+}
+
+.content-comment {
+    background: #fff;
+    border-radius: 30px;
+    width: 90%;
+    float: right;
+    padding: 5px 10px;
+}
+.input-comment-answer {
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 30px;
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+}
+.btn-answer {
+    padding: 5px 0 0 0;
+}
+.input-comment-answer:focus {
+    outline: none;
+}
+
+.div-comment {
+    padding: 0;
+    border: 1px solid #77777717;
+    margin-top: 5px;
+}
+div#comment-answer {
+    width: 100%;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid #e9ebee;
+    background: #fff;
+
+}
+.comment-answer{
+    display:none;
+}
+span.s-name {
+    font-weight: bold;
+    color: #286090;
+}
+textarea#ta-content {
+    width: 100%;
+    max-height: 250px;
+}
+
+
+

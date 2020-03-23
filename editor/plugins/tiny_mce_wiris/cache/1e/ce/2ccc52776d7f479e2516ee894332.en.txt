@@ -1,0 +1,1 @@
+{"result":{"text":"I to the power of A I to the power of O space x space I to the power of B I to the power of O"},"status":"ok"}

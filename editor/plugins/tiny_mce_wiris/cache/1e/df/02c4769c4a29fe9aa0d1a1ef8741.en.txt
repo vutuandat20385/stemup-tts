@@ -1,0 +1,1 @@
+{"result":{"text":"t g phi equals left parenthesis omega L minus 1 divided by omega C right parenthesis"},"status":"ok"}

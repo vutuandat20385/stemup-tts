@@ -1,0 +1,1 @@
+{"result":{"text":"a subscript h t end subscript space equals space 2 comma 74.10 to the power of negative 2 end exponent m divided by s squared"},"status":"ok"}

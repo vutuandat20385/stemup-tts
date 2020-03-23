@@ -1,0 +1,1 @@
+{"result":{"text":"l ự c space h ú t space v ớ i space F space equals space 9 comma 216.10 to the power of negative 12 end exponent space left parenthesis N right parenthesis"},"status":"ok"}

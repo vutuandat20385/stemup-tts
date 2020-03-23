@@ -1,0 +1,1 @@
+{"result":{"text":"fraction numerator A B over denominator a b end fraction D d space x space fraction numerator A B over denominator a b end fraction D d"},"status":"ok"}

@@ -1,0 +1,1 @@
+{"result":{"text":"A subscript C u end subscript space equals space 64 comma space n subscript C u end subscript space equals space 2 comma space A subscript A g end subscript space equals space 108 comma space n subscript A g end subscript space equals space 1 colon"},"status":"ok"}

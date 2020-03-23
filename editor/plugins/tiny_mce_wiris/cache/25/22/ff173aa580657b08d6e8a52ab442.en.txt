@@ -1,0 +1,1 @@
+{"result":{"text":"l equals left parenthesis 2 k plus 1 right parenthesis lambda divided by 2"},"status":"ok"}

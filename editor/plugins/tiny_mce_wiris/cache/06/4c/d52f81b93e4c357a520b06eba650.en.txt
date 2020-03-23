@@ -1,0 +1,1 @@
+{"result":{"text":"space 0 left parenthesis r a d right parenthesis space v à space fraction numerator negative pi over denominator 2 end fraction left parenthesis r a d right parenthesis space"},"status":"ok"}

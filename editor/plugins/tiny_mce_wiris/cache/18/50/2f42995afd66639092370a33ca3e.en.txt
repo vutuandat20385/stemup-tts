@@ -1,0 +1,1 @@
+{"result":{"text":"c m to the power of 2 number space end exponent"},"status":"ok"}

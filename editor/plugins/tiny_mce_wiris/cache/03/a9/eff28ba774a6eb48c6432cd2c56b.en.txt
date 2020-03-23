@@ -1,0 +1,1 @@
+{"result":{"text":"x space equals space x subscript o space plus space v t"},"status":"ok"}

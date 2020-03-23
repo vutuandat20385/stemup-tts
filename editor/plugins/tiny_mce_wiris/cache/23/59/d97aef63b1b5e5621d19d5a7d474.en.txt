@@ -1,0 +1,1 @@
+{"result":{"text":"t g phi equals fraction numerator omega L plus begin display style omega C end style over denominator R end fraction"},"status":"ok"}

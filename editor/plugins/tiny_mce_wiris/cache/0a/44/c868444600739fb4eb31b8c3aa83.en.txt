@@ -1,0 +1,1 @@
+{"result":{"text":"t r á i space d ấ u comma space đ ộ space l ớ n space l à space 4 comma 025.10 to the power of negative 9 space end exponent left parenthesis mu C right parenthesis"},"status":"ok"}

@@ -1,0 +1,1 @@
+{"result":{"text":"R apostrophe equals R cos 60 to the power of o"},"status":"ok"}

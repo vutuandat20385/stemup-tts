@@ -1,0 +1,1 @@
+{"result":{"text":"I subscript o equals U subscript o divided by omega C space v à space phi equals negative pi divided by 2"},"status":"ok"}

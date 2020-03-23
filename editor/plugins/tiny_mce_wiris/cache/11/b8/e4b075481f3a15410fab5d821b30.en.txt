@@ -1,0 +1,1 @@
+{"result":{"text":"0 comma 012 space K to the power of negative 1 end exponent"},"status":"ok"}

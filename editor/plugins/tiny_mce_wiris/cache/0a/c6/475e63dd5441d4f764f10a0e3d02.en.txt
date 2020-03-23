@@ -1,0 +1,1 @@
+{"result":{"text":"w equals 6 comma 28 left parenthesis r a d divided by s right parenthesis space v à space v equals 6 comma 28 left parenthesis m divided by s right parenthesis"},"status":"ok"}

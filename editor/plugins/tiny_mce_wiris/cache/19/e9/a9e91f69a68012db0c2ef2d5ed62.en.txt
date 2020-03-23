@@ -1,0 +1,1 @@
+{"result":{"text":"0 comma 5 space W divided by m squared"},"status":"ok"}

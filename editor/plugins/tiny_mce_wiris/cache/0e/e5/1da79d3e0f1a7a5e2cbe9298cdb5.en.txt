@@ -1,0 +1,1 @@
+{"result":{"text":"v space equals space 233 m divided by s space v à space a space equals space 0 comma 033 m divided by s squared"},"status":"ok"}

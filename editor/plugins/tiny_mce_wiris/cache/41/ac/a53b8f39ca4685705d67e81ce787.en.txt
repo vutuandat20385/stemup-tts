@@ -1,0 +1,1 @@
+{"result":{"text":"m 2 to the power of blank"},"status":"ok"}

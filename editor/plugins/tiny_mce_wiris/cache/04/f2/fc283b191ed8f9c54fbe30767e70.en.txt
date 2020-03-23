@@ -1,0 +1,1 @@
+{"result":{"text":"n rightwards arrow p plus e to the power of minus"},"status":"ok"}

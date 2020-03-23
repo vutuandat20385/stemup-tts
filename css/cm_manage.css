@@ -1,0 +1,139 @@
+body {
+    background: #e9ebee;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-size: 15px;
+}
+div#top {
+    height: 70px;
+}
+.active1 {
+    background: #286090;
+    color: #fff;
+    border: solid 1px #286090;
+}
+.list-group-item.active1 {
+    background: #286090;
+    color: #fff;
+    border: solid 1px #286090;
+}
+.span_green{
+    color: #16dc25;
+    font-size: 20px;
+}
+.span_orange{
+    color: #f6921e;
+    font-size: 20px;
+}
+.span_blue{
+    color: #286090;
+    font-size: 20px;
+}
+.span_red{
+    color:#fd0101;
+    font-size: 20px;
+}
+.center{
+    text-align: center;
+}
+.header h1 {
+    text-transform: uppercase;
+    color: #fff;
+}
+thead.thead-dark {
+    background: #003c6a;
+    color: #fff;
+}
+table.table.table-bordered th {
+    font-weight: normal;
+}
+.div-pagination {
+    width: 100%;
+    text-align: center;
+}
+.col-right {
+    text-align: right;
+}
+.col-right label, .col-left label{
+    margin-right: 15px;
+    color: #286090;
+    font-weight: normal;
+}
+.custom-select {
+    padding: 3px 10px;
+    border: none;
+    border-radius: 5px;
+    color: #286090;
+    outline: 0px;
+}
+select#inputStatus {
+    margin-right: 10px;
+}
+#main-comment-manage {
+    margin-top: 70px;
+}
+.div-filter.row {
+    margin: 10px 0;
+}
+.header {
+    background: #286090;
+    height: 80px;
+    vertical-align: middle;
+    display: flex;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align: middle;
+}
+table td[class*="col-"], table th[class*="col-"] {
+    float: left;
+}
+.green{
+    color:green;
+}
+.blue{
+    color:blue;
+}
+.red{
+    color:red;
+}
+.orange{
+    color:orange;
+}
+.pagination {
+    text-align: center;
+    width: 100%;
+}
+td.td_action,td.td_id,td.td_status,td.td_createname,td.td_createdate {
+    text-align: center;
+}
+.link {
+    margin: 5px 10px;
+    padding: 5px;
+}
+span.curlink.link {
+    font-weight: bold;
+    border-radius: 50%;
+    background: #0072c7;
+    color: #fff;
+    padding: 5px 10px;
+}
+select#searchAction {
+    padding: 2px;
+    border: none;
+    margin-left: 5px;
+}
+input#comment_search {
+    border-radius: 4px;
+    border: none;
+    padding: 2px 10px;
+}
+select#searchAction {
+    padding: 2px 10px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+input:focus, select:focus {
+    outline: none;
+}

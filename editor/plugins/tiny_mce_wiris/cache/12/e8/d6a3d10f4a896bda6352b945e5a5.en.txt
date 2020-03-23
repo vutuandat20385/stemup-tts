@@ -1,0 +1,1 @@
+{"result":{"text":"left parenthesis 0 less than phi less than 2 pi right parenthesis"},"status":"ok"}

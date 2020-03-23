@@ -1,0 +1,10 @@
+@media screen and (max-width: 400px){
+    .hideemail{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .box-bor1{
+        margin-top: 50px;
+    }
+}

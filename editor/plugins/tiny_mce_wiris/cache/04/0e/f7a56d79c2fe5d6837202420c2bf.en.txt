@@ -1,0 +1,1 @@
+{"result":{"text":"37 space rightwards arrow space 44 to the power of o C"},"status":"ok"}

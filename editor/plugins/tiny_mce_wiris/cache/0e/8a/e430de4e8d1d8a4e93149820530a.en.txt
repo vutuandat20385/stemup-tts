@@ -1,0 +1,1 @@
+{"result":{"text":"v equals 4 p left parenthesis m divided by s right parenthesis semicolon space a equals 3 comma 14 m divided by s squared"},"status":"ok"}

@@ -1,0 +1,1 @@
+{"result":{"text":"f equals f subscript 3 equals 180 H z"},"status":"ok"}

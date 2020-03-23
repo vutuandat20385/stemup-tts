@@ -1,0 +1,1 @@
+{"result":{"text":"q subscript 2 space greater than space 0 comma space q subscript 3 space less than space 0"},"status":"ok"}

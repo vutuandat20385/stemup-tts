@@ -1,0 +1,1 @@
+{"result":{"text":"4 space v â n space s á n g space c ó space m à u space c ủ a space v â n space s á n g space t r u n g space t â m comma space 6 space v â n space s á n g space c ó space m à u space b ứ c space x ạ space lambda subscript 2 v à space 8 space v â n space s á n g space c ó space m à u space b ứ c space x ạ space lambda subscript 1"},"status":"ok"}

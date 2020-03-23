@@ -1,0 +1,1 @@
+{"result":{"text":"x space equals space 30 t space minus space t squared semicolon space t space equals space 15 s semicolon space v space equals negative space 10 m divided by s"},"status":"ok"}

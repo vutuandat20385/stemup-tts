@@ -1,0 +1,152 @@
+.div-head {
+    top: 0;
+    position: fixed;
+    width: 100%;
+	background: #003c6a;
+	height: 50px;
+    z-index: 9999;
+}
+.container.div-main {
+    margin-top: 50px;
+}
+.main-content {
+    padding-top: 20px;
+}
+.quiz-item {
+    padding: 10px;
+}
+.item-cover {
+    border: 1px solid #a7aaab94;
+    height: auto;
+    background: #fff;
+    -webkit-box-shadow: 8px 8px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 8px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 8px 8px 5px -5px rgba(0,0,0,0.75);
+	padding: 15px 10px;
+	border-radius: 5px;
+}
+.item-cover:hover {
+    -webkit-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.75);
+}
+.quiz-item-img {
+    padding: 0;
+}
+
+.quiz-item-img img {
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+}
+.quiz-item-title {
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid #f30a0a;
+    color: #0c52c4;
+	height: 55px;
+}
+.quiz-item-points {
+    position: absolute;
+    background: #0c78d5;
+    width: 40px;
+    height: 40px;
+    padding: 9px 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    top: -10px;
+    right: -10px;
+    -webkit-box-shadow: 8px 8px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 8px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 8px 8px 5px -5px rgba(0,0,0,0.75);
+}
+.navbar-brand {
+    padding: 3px;
+}
+.icon-left {
+    left: 0;
+    position: absolute;
+    top: 5px;
+}
+.quiz-item-level-hard {
+    font-size: 15px;
+    padding: 2px;
+    color: #eb1c23;
+    font-weight: 550;
+}
+div#menu {
+    text-align: center;
+    padding: 15px 0;
+    background: #eceef178;
+}
+span#t-header {
+    font-size: 40px;
+    color: #0c78d5;
+    font-weight: bold;
+    text-shadow: 3px 3px #fff700;
+}
+.pagination span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+span.curlink {
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    background: #eb1c86;
+    padding: 5px;
+}
+.pagnation_link {
+    width: 100%;
+    text-align: center;
+}
+.text-noidung {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 17px;
+}
+.pagination {
+    text-align: center;
+    width: 100%;
+}
+.col-text-lambai {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.col-text-lambai a:hover {
+    text-decoration: none;
+    color: #cf1519;
+}
+.col-text-dapan a:hover {
+    text-decoration: none;
+    color: #cf1519;
+}
+.btn1 {
+    font-size: 11px;
+}
+button.btn-lambai {
+    border: 1px solid #0c78d5;
+    padding: 3px 20px;
+    background: #fff;
+    border-radius: 5px;
+    background: #0c78d5;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+}
+button.btn-lambai:hover {
+    background: #ffe806;
+    border: 1px solid #ffe806;
+}
+div#footer {
+    width: 100%;
+    height: 100px;
+    background: #f6f7f8;
+}

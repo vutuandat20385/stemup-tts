@@ -1,0 +1,1 @@
+{"result":{"text":"x space equals space x subscript o minus space v subscript o t space plus space a t squared divided by 2"},"status":"ok"}

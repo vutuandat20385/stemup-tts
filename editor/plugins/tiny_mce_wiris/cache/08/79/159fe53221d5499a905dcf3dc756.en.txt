@@ -1,0 +1,1 @@
+{"result":{"text":"left parenthesis C subscript 1 space n t space C subscript 2 right parenthesis space divided by divided by space C subscript 3"},"status":"ok"}

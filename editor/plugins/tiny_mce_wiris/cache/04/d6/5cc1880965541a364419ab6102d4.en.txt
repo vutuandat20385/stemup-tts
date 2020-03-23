@@ -1,0 +1,1 @@
+{"result":{"text":"a equals fraction numerator v squared minus v subscript o superscript 2 over denominator 2 S end fraction equals fraction numerator 60 squared minus 40 squared over denominator 2 end fraction equals 1000 left parenthesis k m divided by h squared right parenthesis"},"status":"ok"}

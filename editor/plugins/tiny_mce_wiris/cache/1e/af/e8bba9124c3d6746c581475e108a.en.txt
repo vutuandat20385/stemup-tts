@@ -1,0 +1,1 @@
+{"result":{"text":"fraction numerator S over denominator S apostrophe end fraction"},"status":"ok"}

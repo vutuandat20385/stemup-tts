@@ -1,0 +1,1 @@
+{"result":{"text":"p h ó n g space x ạ space alpha"},"status":"ok"}

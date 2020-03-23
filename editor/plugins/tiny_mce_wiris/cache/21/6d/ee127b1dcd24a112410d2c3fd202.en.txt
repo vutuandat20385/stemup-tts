@@ -1,0 +1,1 @@
+{"result":{"text":"omega equals 1 comma 18.10 to the power of negative 3 end exponent space r a d divided by s semicolon space T equals 5329 s semicolon space f equals 1 comma 88.10 to the power of negative 3 end exponent H z"},"status":"ok"}

@@ -1,0 +1,57 @@
+.arrowlistmenu{
+width: 100%; /*width of accordion menu*/
+}
+
+.arrowlistmenu .menuheader {
+	border-radius: 0 5px 0 5px;
+    font: bold 14px Arial;
+    color: white;
+    background: #0c78d5;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    padding: 8px 0 8px 10px;
+    cursor: hand;
+    cursor: pointer;
+    -webkit-box-shadow: 8px 8px 5px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 8px 5px -5px rgba(0,0,0,0.75);
+    box-shadow: 8px 8px 5px -5px rgba(0,0,0,0.75);
+}
+.arrowlistmenu .menuheader:hover {
+    border: 1px solid #f0ff00;
+}
+.arrowlistmenu .openheader{ /*CSS class to apply to expandable header when it's expanded*/
+background-image: url(http://1.bp.blogspot.com/-jeGIM5duw4Q/T44KL8MhYoI/AAAAAAAAX0M/HTA4YcQE2zY/s1600/titlebar-active.png);
+}
+
+.arrowlistmenu ul{ /*CSS for UL of each sub menu*/
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.arrowlistmenu ul li{
+padding-bottom: 2px; /*bottom spacing between menu items*/
+}
+
+.arrowlistmenu ul li a{
+color: #A70303;
+background: url(http://4.bp.blogspot.com/-qH3X6Ciy150/T44KFWiC2rI/AAAAAAAAX0E/Rgaqrw2nJd8/s1600/arrowbullet.png) no-repeat center left; /*custom bullet list image*/
+display: block;
+padding: 2px 0;
+padding-left: 19px; /*link text is indented 19px*/
+text-decoration: none;
+font-weight: bold;
+border-bottom: 1px solid #dadada;
+font-size: 90%;
+}
+
+.arrowlistmenu ul li a:visited{
+color: #A70303;
+}
+
+.arrowlistmenu ul li a:hover{ /*hover state CSS*/
+color: #A70303;
+background-color: #F3F3F3;
+}

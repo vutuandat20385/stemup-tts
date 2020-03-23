@@ -1,0 +1,1 @@
+{"result":{"text":"a space equals space – space 0 comma 2 m divided by s squared"},"status":"ok"}

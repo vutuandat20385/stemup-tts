@@ -1,0 +1,1 @@
+{"result":{"text":"q subscript 1 space equals space plus 3 space left parenthesis mu C right parenthesis"},"status":"ok"}

@@ -1,0 +1,1 @@
+{"result":{"text":"t i a space gamma"},"status":"ok"}

@@ -1,0 +1,1 @@
+{"result":{"text":"m subscript N equals 4 comma 0015 u comma space m subscript p equals 1 comma 0073 u comma space m subscript n equals 13 comma 9992 u comma m subscript X equals 16 comma 9947 u space v à space l u. c squared equals 931 comma 5 M e V"},"status":"ok"}

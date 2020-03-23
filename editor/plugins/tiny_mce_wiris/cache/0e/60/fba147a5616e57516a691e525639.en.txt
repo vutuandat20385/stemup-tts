@@ -1,0 +1,1 @@
+{"result":{"text":"1 divided by omega L equals omega C"},"status":"ok"}

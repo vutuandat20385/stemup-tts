@@ -1,0 +1,100 @@
+.mobile_MB20 {
+    display: none;
+}
+.web_MB20 {
+    display: block;
+    padding: 0 10px;
+}
+.box-bor.MB20.web-info {
+	padding: 10px;
+}
+.user-img {
+    padding: 0;
+}
+.cover-info {
+    margin: 0;
+}
+.box-star {
+    padding: 0;
+}
+.box-diem {
+    background: #f6921e;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+.text-diem1{
+	color: #dff61e;
+	margin-bottom: 0;
+	font-size: 18px;
+	line-height: 1.1;
+}
+.text-diem{
+	font-weight: 700;
+	color: #fff;
+	font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+	.web_MB20{
+		display:none;
+	}
+	.mobile_MB20 {
+		display: block;
+	}
+	.user-img {
+	    padding: 0 5px;
+	}
+	.user-info {
+	    padding: 0 5%;
+	}
+	.row1 {
+	    padding: 0 10px;
+	}
+	.btn-cauhinh {
+	    background: #337ab7;
+	}
+	.btn-hoatdong {
+	    background: #5cb85c;
+	}
+	.btn-tuhoc {
+	    background: #f0ad4e;
+	}	
+	.btn-thongbao {
+	    background: #d9534f;
+	}
+	.btn-menu {
+	    padding: 5px 10px;
+	    color: #fff;
+	    width: 100%;
+	    border: none;
+	    text-align: left;
+	    font-size: 17px;
+	}
+	.menu_chung {
+	    padding: 0;
+	}
+	.mobile_m {
+	    padding: 5px;
+	}
+	p.text-small {
+	    margin: 0;
+	}
+	.user-star {
+	    padding: 3px 5px;
+	}
+	.pd0 {
+	    padding: 0;
+	}
+
+	
+	p.text-diem1 {
+	    margin: 0;
+	}
+
+}
+
+@media screen and (max-width: 320px){
+		.user-info {
+	    padding: 0 0 0 10%;
+	}
+}

@@ -1,0 +1,1 @@
+{"result":{"text":"Z subscript c equals fraction numerator 1 over denominator pi f C end fraction"},"status":"ok"}

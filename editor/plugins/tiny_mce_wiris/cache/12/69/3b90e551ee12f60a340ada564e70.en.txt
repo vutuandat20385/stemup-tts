@@ -1,0 +1,1 @@
+{"result":{"text":"P equals I squared Z"},"status":"ok"}

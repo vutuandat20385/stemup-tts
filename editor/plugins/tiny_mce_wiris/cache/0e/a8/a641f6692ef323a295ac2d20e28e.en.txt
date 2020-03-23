@@ -1,0 +1,1 @@
+{"result":{"text":"x equals v subscript 0 plus fraction numerator a t squared over denominator 2 end fraction comma left parenthesis v subscript o comma space a space space c ù n g space d ấ u right parenthesis"},"status":"ok"}

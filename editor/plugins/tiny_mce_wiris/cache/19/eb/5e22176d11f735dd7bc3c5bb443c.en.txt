@@ -1,0 +1,1 @@
+{"result":{"text":"L ự c space đ ẩ y comma space c ó space đ ộ space l ớ n space F space equals space 9 comma 2.10 to the power of 8 space N"},"status":"ok"}

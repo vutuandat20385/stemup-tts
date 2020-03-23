@@ -1,0 +1,1 @@
+{"result":{"text":"R equals 50 capital omega space v à space L equals fraction numerator 1 over denominator 200 square root of 3 pi end fraction H"},"status":"ok"}

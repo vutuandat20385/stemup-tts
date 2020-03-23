@@ -1,0 +1,1 @@
+{"result":{"text":"omega equals fraction numerator increment s over denominator increment t end fraction"},"status":"ok"}

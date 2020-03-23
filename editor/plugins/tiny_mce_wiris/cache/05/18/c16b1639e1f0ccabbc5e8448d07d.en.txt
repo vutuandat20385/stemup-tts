@@ -1,0 +1,1 @@
+{"result":{"text":"m g l alpha subscript 0 squared"},"status":"ok"}

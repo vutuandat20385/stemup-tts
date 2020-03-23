@@ -1,0 +1,1 @@
+{"result":{"text":"q subscript 3 equals space 2.10 to the power of negative 6 end exponent space C"},"status":"ok"}

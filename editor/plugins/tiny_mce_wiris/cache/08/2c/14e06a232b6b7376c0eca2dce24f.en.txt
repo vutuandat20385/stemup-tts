@@ -1,0 +1,1 @@
+{"result":{"text":"X presubscript Z subscript 1 end presubscript presuperscript A subscript 1 end presuperscript subscript 1 plus X presubscript Z subscript 2 end presubscript presuperscript A subscript 2 end presuperscript subscript 2 rightwards arrow Y presubscript Z presuperscript A plus n"},"status":"ok"}

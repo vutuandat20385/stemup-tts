@@ -1,0 +1,1 @@
+{"result":{"text":"space q subscript 3 space equals space 4 comma 5.10 to the power of negative 8 end exponent C semicolon space C A space equals space 6 c m semicolon space C B space equals space 18 c m"},"status":"ok"}

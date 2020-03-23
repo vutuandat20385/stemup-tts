@@ -1,0 +1,1 @@
+{"result":{"text":"omega subscript h over omega subscript m i n end subscript equals 1 over 12 semicolon space v subscript h over v subscript m i n end subscript equals 1 over 9"},"status":"ok"}

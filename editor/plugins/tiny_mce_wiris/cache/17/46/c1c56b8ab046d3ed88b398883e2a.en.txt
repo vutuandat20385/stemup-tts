@@ -1,0 +1,1 @@
+{"result":{"text":"I subscript 0 equals U divided by 2 R space v à space phi equals 0"},"status":"ok"}

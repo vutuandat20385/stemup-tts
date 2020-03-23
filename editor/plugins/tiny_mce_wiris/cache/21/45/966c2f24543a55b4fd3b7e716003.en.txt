@@ -1,0 +1,1 @@
+{"result":{"text":"fraction numerator A B over denominator a b end fraction fraction numerator D E over denominator d e end fraction X to the power of M X to the power of m space x space space fraction numerator A b over denominator a B end fraction fraction numerator D e over denominator d E end fraction X to the power of m Y"},"status":"ok"}

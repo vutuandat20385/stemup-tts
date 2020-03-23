@@ -1,0 +1,1 @@
+{"result":{"text":"Z equals square root of R squared plus left parenthesis omega C minus fraction numerator 1 over denominator omega L end fraction right parenthesis squared end root"},"status":"ok"}

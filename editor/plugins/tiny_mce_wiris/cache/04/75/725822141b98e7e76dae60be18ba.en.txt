@@ -1,0 +1,1 @@
+{"result":{"text":"omega equals fraction numerator increment phi over denominator increment t squared end fraction"},"status":"ok"}

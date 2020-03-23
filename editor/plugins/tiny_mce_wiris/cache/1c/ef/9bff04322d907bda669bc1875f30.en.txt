@@ -1,0 +1,1 @@
+{"result":{"text":"Q subscript 10 open curly brackets blank close curly brackets end subscript"},"status":"ok"}

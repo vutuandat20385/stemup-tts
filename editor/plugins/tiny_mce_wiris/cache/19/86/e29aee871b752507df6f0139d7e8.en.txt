@@ -1,0 +1,1 @@
+{"result":{"text":"increment phi equals 2 n pi space left parenthesis v ớ i space n element of Z right parenthesis"},"status":"ok"}

@@ -1,0 +1,1 @@
+{"result":{"text":"x space equals space x subscript 0 space plus space v subscript 0 t to the power of 2 space end exponent plus space a t cubed divided by 2"},"status":"ok"}

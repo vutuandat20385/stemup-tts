@@ -1,0 +1,1 @@
+{"result":{"text":"W equals W subscript t plus W subscript đ equals fraction numerator 1 over denominator 4 C end fraction Q subscript 0 superscript 2"},"status":"ok"}

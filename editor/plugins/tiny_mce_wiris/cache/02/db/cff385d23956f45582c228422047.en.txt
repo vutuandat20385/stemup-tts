@@ -1,0 +1,1 @@
+{"result":{"text":"almost equal to 8 comma 2 m divided by s squared"},"status":"ok"}

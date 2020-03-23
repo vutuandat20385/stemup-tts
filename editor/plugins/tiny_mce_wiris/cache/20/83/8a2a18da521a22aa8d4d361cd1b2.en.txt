@@ -1,0 +1,1 @@
+{"result":{"text":"L ự c space h ú t comma space c ó space đ ộ space l ớ n space F space equals space 9 comma 2.10 to the power of negative 8 end exponent space N"},"status":"ok"}

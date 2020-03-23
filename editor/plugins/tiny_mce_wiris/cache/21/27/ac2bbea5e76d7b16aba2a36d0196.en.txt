@@ -1,0 +1,1 @@
+{"result":{"text":"40 percent sign x subscript b superscript A comma 40 percent sign X subscript b superscript a comma 10 percent sign X subscript B superscript A comma 10 percent sign X subscript b superscript a"},"status":"ok"}

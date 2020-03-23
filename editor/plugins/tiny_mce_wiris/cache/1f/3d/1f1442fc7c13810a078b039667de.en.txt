@@ -1,0 +1,1 @@
+{"result":{"text":"fraction numerator A plus T over denominator G plus X end fraction"},"status":"ok"}

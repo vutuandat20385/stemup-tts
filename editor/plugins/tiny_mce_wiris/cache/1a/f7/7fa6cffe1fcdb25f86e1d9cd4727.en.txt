@@ -1,0 +1,1 @@
+{"result":{"text":"I subscript A equals 1 W divided by m squared"},"status":"ok"}
