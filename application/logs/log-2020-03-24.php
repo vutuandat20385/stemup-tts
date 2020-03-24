@@ -430,3 +430,63 @@ ERROR - 2020-03-24 11:40:29 --> Cache: Failed to initialize APC; extension not l
 >>>>>>> 7a4622c780e2e4a1e1719993ed87e25e1e577484
 ERROR - 2020-03-24 13:55:12 --> Cache: Failed to initialize APC; extension not loaded/enabled?
 ERROR - 2020-03-24 13:55:24 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 13:59:12 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 13:59:32 --> Start-thongke 
+ERROR - 2020-03-24 14:00:03 --> Severity: Error --> Maximum execution time of 30 seconds exceeded C:\xampp\htdocs\stemup-tts\system\database\drivers\mysqli\mysqli_driver.php 311
+ERROR - 2020-03-24 14:00:03 --> Start-thongke 
+ERROR - 2020-03-24 14:00:05 --> Severity: Error --> Maximum execution time of 30 seconds exceeded C:\xampp\htdocs\stemup-tts\system\database\drivers\mysqli\mysqli_driver.php 311
+ERROR - 2020-03-24 14:10:24 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:10:34 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 14:10:50 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:11:01 --> Query error: Column 'uid' cannot be null - Invalid query: INSERT INTO `notify` (`uid`, `content`, `model`, `action`, `click`) VALUES (NULL, 'Đã tạo một câu hỏi.', 'qbank', 'new question', '')
+ERROR - 2020-03-24 14:11:01 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:11:07 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:11:10 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:11:17 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:11:25 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:11:42 --> Query error: Column 'uid' cannot be null - Invalid query: INSERT INTO `notify` (`uid`, `content`, `model`, `action`, `click`) VALUES (NULL, 'Đã tạo một câu hỏi.', 'qbank', 'new question', '')
+ERROR - 2020-03-24 14:11:42 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:11:46 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:12:13 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:12:34 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 14:27:29 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 15:15:00 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 15:53:18 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 16:00:30 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 16:05:16 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:05:52 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:07:49 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 16:07:51 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:08:00 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:09:42 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:10:16 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:10:23 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:12:27 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:12:28 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:14:05 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 16:14:08 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:14:44 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:14:47 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:20:01 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:20:05 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 16:26:12 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 16:43:04 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 16:43:39 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:43:42 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:43:57 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:44:00 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:44:06 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 - Invalid query: DELETE  from savsoft_news where id = 
+ERROR - 2020-03-24 16:50:18 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 16:50:32 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\admin\pages\edit_news.php 69
+ERROR - 2020-03-24 16:51:08 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 16:52:24 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\admin\pages\edit_news.php 69
+ERROR - 2020-03-24 16:56:20 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 17:20:33 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 17:35:15 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 17:41:15 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 17:48:01 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 17:53:57 --> ......
+ERROR - 2020-03-24 17:53:57 --> ......
+ERROR - 2020-03-24 17:54:02 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 17:54:34 --> ......
+ERROR - 2020-03-24 17:54:34 --> ......

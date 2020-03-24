@@ -310,7 +310,7 @@ $(document).ready(function(){
       var show = $("input[name=cbShow]").val();
       var name_new = $("input[name=txtnamenews]").val();
       var tag_new = $("input[name=txttagnews]").val();
-      var des_new = $("textarea#ta_des").val();
+      var des_new = $("textarea#txtdesnews").val();
       var pos = $('#inp_stt').val();
       var img_new = $("input[name=image_avatar]").val();
       var class_new = $("#sltype").val();

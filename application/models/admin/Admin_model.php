@@ -177,7 +177,7 @@ class Admin_model extends CI_Model {
                 'public_date'  => $public_date,
                 'status'  => 1,
                 'pos'=> $_POST['pos'],
-                'related_news'=> trim(' ',$_POST['related_news']),
+                'related_news'=> $_POST['related_news'],
                 'source'=>$_POST['source']
             );
             $this->db->insert('savsoft_news', $data);
@@ -210,7 +210,6 @@ class Admin_model extends CI_Model {
             $sql = "DELETE  from savsoft_news where id = $id";
             $query = $this->db->query($sql);
         }
-
         function check_qid($qid){
             $this->db->select('lid,cid');
             $this->db->where('qid',$qid);
@@ -306,6 +305,107 @@ class Admin_model extends CI_Model {
 			return $query->result_array();
 		}else
 			return false;
-	}
+    }
+    function get_new($id)
+    {
+        $sql = "select * from savsoft_news where id = $id";
+        $query = $this->db->query($sql);
+        return $query->row_array();
+    }
+    function get_list_chon_v2($list_id)
+    {
+        if (!is_null($list_id)) {
+            $sql = "SELECT * FROM savsoft_news WHERE id in ($list_id)";
+            $query = $this->db->query($sql)->result_array();
+            $html = '';
+            foreach ($query as $key => $value) {
+                $k = $key + 1;
+                $html .= '<p class="dschon item">' . $k . ' - ' . $value['name'] . '</p>';
+            }
+        } else {
+            $html .= '<p class="dschon item">Chưa có tin liên quan</p>';
+        }
+
+        return $html;
+    }
+    function list_edit_news($page = 0, $limit = 5, $id_new)
+    {
+        $sql = " SELECT sn.*, scn.category_name FROM savsoft_news sn 
+					LEFT JOIN savsoft_category_news scn ON scn.id=sn.category
+					WHERE sn.id not in ($id_new) ORDER BY sn.id DESC limit $limit ";
+        $query = $this->db->query($sql)->result_array();
+        return $query;
+    }
+    function update_new()
+    {
+
+        $str = $_POST['name'];
+        $public_date = date_format(date_create($_POST['public_date']), "Y-m-d");
+        if (isset($_FILES["avatar_news"])) {
+            $target_dir = "images/image_news/";
+            $inputFileName = $target_dir . basename($_FILES["avatar_news"]["name"]);
+            $fileType = strtolower(pathinfo($inputFileName, PATHINFO_EXTENSION));
+            if ($fileType == "png" | $fileType == "jpg") {
+                // Upload file
+                $target_dir = "images/image_news/";
+                $basename = basename($_FILES["avatar_news"]["name"]);
+                $inputFileName = $target_dir . $_POST['url_name'] . '.png';
+                move_uploaded_file($_FILES['avatar_news']['tmp_name'], $inputFileName);
+                $data = array(
+                    'name' => $_POST['name'],
+                    'avatar' => base_url("images/image_news/" . $_POST['url_name'] . ".png"),
+                    'url_name' => $_POST['url_name'] . "-" . $_POST['id'],
+                    'featured' => $_POST['featured'],
+                    'category'  => $_POST['class'],
+                    'description'  => $_POST['des'],
+                    'content'  => $_POST['content'],
+                    'tag'  => $_POST['tag'],
+                    'status'  => 1,
+                    'pos' => $_POST['pos'],
+                    'public_date' => $public_date,
+                    'related_news' => $_POST['related_news'],
+                    'source' => $_POST['source']
+                );
+            }
+        } else {
+            $data = array(
+                'name' => $_POST['name'],
+                'url_name' => $_POST['url_name'] . "-" . $_POST['id'],
+                'featured' => $_POST['featured'],
+                'category'  => $_POST['class'],
+                'description'  => $_POST['des'],
+                'content'  => $_POST['content'],
+                'tag'  => $_POST['tag'],
+                'status'  => 1,
+                'pos' => $_POST['pos'],
+                'public_date' => $public_date,
+                'related_news' => $_POST['related_news'],
+                'source' => $_POST['source']
+            );
+        }
+        log_message("error", "......" . $name);
+        log_message("error", "......" . $_FILES['avatar_news']['tmp_name']);
+        $this->db->where('id', $_POST['id']);
+        $this->db->update('savsoft_news', $data);
+        if ($this->db->affected_rows() > 0) {
+            $mess = "success";
+        } else {
+            $mess = "fail";
+        }
+        return $mess;
+    }
+    function check_name_exist_update()
+    {
+        $inp = json_decode($this->input->raw_input_stream, true);
+        $this->db->where('name', $inp['name']);
+        $this->db->where('id !=', $inp['id']);
+        $check = $this->db->get('savsoft_news')->num_rows();
+        if ($check != 0) {
+            $mess = 0;
+        } else {
+            $mess = 1;
+        }
+        return $mess;
+    }
 
 }

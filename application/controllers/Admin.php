@@ -187,10 +187,10 @@ class Admin extends CI_Controller {
 		}        
     }
     
-    function delete_news(){
-        $id=$this->input->get('id');
+    function delete_news($id){
+        // $id=$this->input->get('id');
         $data=$this->admin_model->delete_new($id);
-        
+        redirect("admin/manage_news");
     }
 
     function get_feedback()
@@ -837,5 +837,61 @@ class Admin extends CI_Controller {
         
         $data['content'] = $this->load->view('admin/pages/edit_quiz', $data, true);
         $this->load->view('admin/layouts/main', $data);
+    }
+    function edit_news($id)
+    {
+        $user = $this->session->userdata("logged_in");
+        if ($user['su'] == 1) {
+            $data['new'] = $this->admin_model->get_new($id);
+
+            $check = substr($data['new']['related_news'], 0, 2);
+
+            if ($check == '' || $check == ' ' || $check == '  ') {
+                $data['related_news'] = '';
+                $id_new = -1;
+            } else {
+                $id_new = $data['new']['related_news'];
+                $data['related_news'] = $this->admin_model->get_list_chon_v2($data['new']['related_news']);
+            }
+            $data['array_related'] = explode(",", $data['new']['related_news']);
+
+            //Phân trang cho danh sách tin
+            $data['list_news'] = $this->admin_model->list_edit_news(0, 10, $id_new);
+            $total_rows = $this->admin_model->record_count();
+            $total_page = ceil($total_rows / 10);
+            $data['trang'] = $total_page;
+
+            $data['title'] = 'Sửa tin tức';
+            $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
+            $data['head'] = $this->load->view('admin/layouts/head', $data, true);
+            $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
+
+            // $data['list_news'] = $this->admin_model->list_news();
+            
+            $data['category_news'] = $this->admin_model->get_class_new();
+            $data['content'] = $this->load->view('admin/pages/edit_news', $data, true);
+
+            $this->load->view('admin/layouts/main', $data);
+        }else{
+            header('Location: ' . base_url() . 'index.php/admin/login');
+        }
+    }
+    function update_new()
+    {
+        $user = $this->session->userdata("logged_in");
+        if ($user['su'] == 1) {
+            $data['mess'] = $this->admin_model->update_new();
+            header('Content-Type: application/json');
+            echo json_encode($data);
+        }
+    }
+    function check_name_exist_update()
+    {
+        $user = $this->session->userdata("logged_in");
+        if ($user['uid'] == 1) {
+            $data['check'] = $this->admin_model->check_name_exist_update();
+            header('Content-Type: application/json');
+            echo json_encode($data);
+        }
     }
 }

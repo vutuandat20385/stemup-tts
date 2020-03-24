@@ -7,15 +7,6 @@ $this->load->model("admin_model");
 <script>
   var base_url = "<?php echo base_url() ?>";
 </script>
-<script>
-  $(function() {
-    $("#public_date").datepicker({
-      dateFormat: 'd/m/Y'
-    });
-  });
-</script>
-
-
 <div class="col-xs-12 p0">
   <div class="box">
     <!-- /.box-header -->
@@ -38,7 +29,7 @@ $this->load->model("admin_model");
           <div class="form-group">
             <label for="" class="">Nội dung:</label>
             <div class="">
-              <textarea name="ckeditor" class="ckeditor form-control" placeholder="" id="editor1" rows="20" cols="80"><?php echo $new['content'] ?>
+              <textarea name="ckeditor" class="ckeditor form-control" placeholder="" id="edit_content" rows="20" cols="80"><?php echo $new['content'] ?>
               </textarea>
             </div>
           </div>
@@ -65,10 +56,12 @@ $this->load->model("admin_model");
           <div class="form-group">
             <label class="" for="">Loại tin:</label>
             <div class="">
-              <select id="sltype" class="form-control">
-                <?php foreach ($class as $cl) { ?>
-                  <option value="<?php echo $cl['id'] ?>" <?php if ($cl['id'] == $new['category']) echo 'selected' ?>><?php echo $cl['category_name'] ?></option>
-                <?php } ?>
+            <select id="sltype" class="form-control">
+                <?php foreach ($category_news as $cl) { ?>
+                  <option value="<?php echo $cl['id'] ?>" <?php if ($cl['id'] == $new['category']) {
+                                                            echo 'selected';
+                                                          } ?>><?php echo $cl['category_name'] ?></option>
+                <?php }  ?>
               </select>
             </div>
           </div>
