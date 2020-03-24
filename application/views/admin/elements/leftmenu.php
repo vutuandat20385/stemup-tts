@@ -6,12 +6,12 @@
         <li><a href="<?php echo base_url('index.php/admin/manage_news');?>"><i class="menu-icon icon-tasks"></i> Danh sách tin <b class="label orange pull-right"><?php echo $num_news; ?></b> </a></li>
     </ul>
     <!--/.widget-nav-->
-    <!-- <ul class="widget widget-menu unstyled">
-        <li><a href="#"><i class="menu-icon icon-bold"></i> Thêm câu hỏi </a></li>
-        <li><a href="#"><i class="menu-icon icon-book"></i> Danh sách câu hỏi </a></li>
-        <li><a href="#"><i class="menu-icon icon-paste"></i>Thêm bài trắc nghiệm </a></li>
-        <li><a href="#"><i class="menu-icon icon-table"></i>Danh sách bài trắc nghiệm </a></li>
-    </ul> -->
+    <ul class="widget widget-menu unstyled">
+        <li><a href="<?php echo site_url('admin/add_question')?>"><i class="menu-icon icon-bold"></i> Thêm câu hỏi </a></li>
+        <li><a href="<?php echo site_url('admin/manage_qbank')?>"><i class="menu-icon icon-book"></i> Danh sách câu hỏi </a></li>
+        <li><a href="<?php echo site_url("admin/create_quiz") ?>"><i class="menu-icon icon-paste"></i>Thêm bài trắc nghiệm </a></li>
+        <li><a href="<?php echo site_url('admin/quiz_list');?>"><i class="menu-icon icon-table"></i>Danh sách bài trắc nghiệm </a></li>
+    </ul>
     <ul class="widget widget-menu unstyled">
         <li><a href="<?php echo base_url('index.php/admin/video');?>"><i class="menu-icon icon-book"></i> Danh sách Video </a></li>
         <li><a href="<?php echo base_url('index.php/admin/add_video');?>"><i class="menu-icon icon-book"></i> Thêm mới Video </a></li>

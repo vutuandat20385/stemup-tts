@@ -300,8 +300,9 @@
             </div>
             <!--/.span9-->
         </div>
-
-  </body>
+      </div>
+    </div>
+</body>
 </html>
 <footer class=" col-xs-12 footer2">
       <div class="pull-right hidden-xs">

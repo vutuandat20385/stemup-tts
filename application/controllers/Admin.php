@@ -23,9 +23,9 @@ class Admin extends CI_Controller {
         // $this->load->model("admin/admin_model");
         // $this->load->model("post_model");
         // $this->load->model("qbank_model");
-        // $this->load->model("api_model");
-        // $this->load->model("notify_model");
-        // $this->load->model("quiz_model");
+        $this->load->model("api_model");
+        $this->load->model("notify_model");
+        $this->load->model("quiz_model");
         // $this->load->model("library_model");
         // $this->lang->load('basic', $this->config->item('language'));
     }
@@ -647,5 +647,195 @@ class Admin extends CI_Controller {
                 $data['content']=$this->load->view('admin/pages/add_video',$data,true);
                 $this->load->view('admin/layouts/main',$data);
 		
-	}
+    }
+    
+    public function add_question($nop = '4', $para = '0')
+    {
+        $data['title'] = 'Thêm mới câu hỏi';
+        $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
+        $data['head'] = $this->load->view('admin/layouts/head', $data, true);
+        $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
+        if ($this->input->post('question')) {
+
+            if ($this->qbank_model->insert_question_1()) {
+                $uid = $logged_in['uid'];
+                $content = "Đã tạo một câu hỏi.";
+                $model = "qbank";
+                $action = "new question";  
+                $nid = $this->notify_model->insert_notify($uid, $content, $model, $action);
+                $this->notify_model->insert_notify_user($nid, $uid);
+
+                $this->session->set_flashdata('message', "<div class='alert alert-success'>" . $this->lang->line('data_added_successfully') . " </div>");
+                $check = 0;
+            } else {
+                $this->session->set_flashdata('message', "<div class='alert alert-danger'>" . $this->lang->line('error_to_add_data') . " </div>");
+            }
+            if ($this->input->post('parag') == 1) {
+                //redirect('qbank/new_question_1/'.$nop.'/'.$para);
+
+            } else {
+                //redirect('qbank/pre_new_question/');
+            }
+        }
+        if ($this->session->flashdata('qid')) {
+            $data['qp'] = $this->qbank_model->get_question($this->session->flashdata('qid'));
+        }
+        $data['para'] = $para;
+        $data['nop'] = $nop;
+        // fetching category list
+        $data['category_list'] = $this->qbank_model->category_list();
+        // fetching level list
+        $data['level_list'] = $this->qbank_model->level_list(1);
+
+        $data['content'] = $this->load->view('admin/pages/add_question', $data, true);
+        $this->load->view('admin/pages/add_question', $data);
+    }
+
+    function manage_qbank()
+    {
+        $data['title'] = 'Danh sách câu hỏi';
+        $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
+        $data['head'] = $this->load->view('admin/layouts/head', $data, true);
+        $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
+
+        $data['category_list'] = $this->qbank_model->category_list();
+        $data['level_list'] = $this->qbank_model->level_list(1);
+        $data['questions'] = $this->qbank_model->mng_qt_list(0, 0, "", 15, 0);
+        $data['num_question'] = $this->qbank_model->num_mng_qt(0, 0, "", 15, 0);
+        $data['limit'] = 15;
+        $data['page'] = 0;
+        $data['cid'] = 0;
+        $data['lid'] = 0;
+        $data['num_page'] = ceil($data['num_question'] / $data['limit']);
+
+        $data['content'] = $this->load->view('admin/pages/manage_qbank', $data, true);
+        $this->load->view('admin/layouts/main', $data);
+    }
+
+    function create_quiz()
+    {
+        $user = $this->session->userdata('logged_in');
+        $data['title'] = 'Thêm bài trắc nghiệm';
+        // $data['topbar'] = $this->load->view('admin/elements/topbar',$data,true);
+        $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
+        $data['head'] = $this->load->view('admin/layouts/head', $data, true);
+        $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
+        if ($user['su'] == 1) {
+            $data['su'] == $user['su'];
+            //	var_dump($user['su']);
+            $data['limit'] = 10;
+            $data['category_list'] = $this->qbank_model->category_list();
+            $data['level_list'] = $this->qbank_model->level_list();
+            $data['questions'] = $this->qbank_model->crq_qt_list(0, 0, '', 10, 0);
+            $data['num_question'] = $this->qbank_model->num_crq_qt(0, 0, '', 10, 0);
+            $data['categories'] = $this->qbank_model->category_list();
+            $data['levels'] = $this->qbank_model->level_list();
+            $data['num_page'] = ceil($data['num_question'] / 10);
+            $data['group_list'] = $this->user_model->group_list();
+            //	var_dump($data['questions']);
+            $data['content'] = $this->load->view('admin/pages/create_quiz', $data, true);
+
+            $this->load->view('admin/layouts/main', $data);
+        }
+    }
+
+    function quiz_list($page = 1)
+    {
+        $user = $this->session->userdata('logged_in');
+        $data['title'] = 'Danh sách bài trắc nghiệm';
+        // $data['topbar'] = $this->load->view('admin/elements/topbar',$data,true);
+        $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
+        $data['head'] = $this->load->view('admin/layouts/head', $data, true);
+        $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
+
+        //$data['vui_post']=$this->post_model->post_list($type_vui='vui.stem.vn');
+        $data['post_tag'] = $this->post_model->post_list($type_tag = 'post_tag');
+        //$data['post_cat']=$this->post_model->post_list($type_cat='category');
+        $data['stcategories'] = $this->qbank_model->get_statistic_category();
+        if ($user) {
+            $data['user_name'] = $user['last_name'] . ' ' . $user['first_name'];
+            $data['user_point'] = $this->user_model->get_user_points($user['uid']);
+            $data['email'] = $user['email'];
+            $data['phone'] = $user['contact_no'];
+            $data['uid'] = $user['uid'];
+            $data['user_code'] = $user['user_code'];
+            $data['birthdate'] = $user['birthdate'];
+            $data['link_photo'] = $user['photo'];
+            $data['su'] = $user['su'];
+        }
+        $search = $_GET['search'];
+        if (!$search)
+            $s = "";
+        else
+            $s = $search;
+
+        $cid = $_GET['cid'];
+        if (!intval($cid)) {
+            $cid = 0;
+        }
+        $lid = $_GET['lid'];
+        if (!intval($lid)) {
+            $lid = 0;
+        }
+        $sortby = $_GET['sortby'];
+
+        $t = $this->api_model->quiz_list_login($cid, $lid, $s, $sortby, $page - 1);
+        $data['quiz_list'] = $t['quiz'];
+        $data['numpage'] = $t['numpage'];
+        $data['page'] = $page;
+        if ($data['numpage'] > 10) {
+            if ($page < $data['numpage'] - 3 && $page > 4) {
+                $data['pstart'] = $page - 3;
+            } else {
+                if ($page < 5) {
+                    $data['pstart'] = 2;
+                } else {
+                    $data['pstart'] = $data['numpage'] - 7;
+                }
+            }
+        }
+
+
+        $data['nb_class'] = $this->api_model->nb_class_list_2('');
+        $data['np_cl'] = ceil($data['nb_class'] / 5);
+        $data['nb_students'] = $this->api_model->nb_student_list_2('');
+        $data['np_std'] = ceil($data['nb_students'] / 5);
+        $data['cid'] = $cid;
+        $data['lid'] = $lid;
+        $data['search'] = $search;
+        $data['sortby'] = $sortby;
+        $data['category_list'] = $this->qbank_model->category_list();
+        $data['level_list'] = $this->qbank_model->level_list();
+        $data['content'] = $this->load->view('admin/pages/quiz_list', $data, true);
+
+        $this->load->view('admin/layouts/main', $data);
+    }
+
+    function edit_quiz($qid)
+    {
+        $user = $this->session->userdata('logged_in');   
+        $data['title'] = 'Sửa bài kiểm tra';
+        $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
+        $data['head'] = $this->load->view('admin/layouts/head', $data, true);
+        $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
+
+        $data['quiz'] = $this->quiz_model->get_array_qids($qid);
+        $data['created'] = $this->quiz_model->get_array_qids($qid)['inserted_by'];
+        $data['limit'] = 10;
+        $data['page'] = 0;
+        $data['cid'] = 0;
+        $data['lid'] = 0;
+        $data['category_list'] = $this->qbank_model->category_list();
+        $data['level_list'] = $this->qbank_model->level_list();
+        $data['qids'] = $this->quiz_model->get_array_qids($qid)['qids'];
+        $data['number_qbank'] = $this->quiz_model->num_quiz_in($data['qids'], 0, 0, '');
+        $data['num_page'] = ceil($data['number_qbank'] / $data['limit']);
+        $data['qbank'] = $this->quiz_model->get_quiz_in($data['qids'], 0, 0, '', 10, 0);
+        $data['number_qbank_not'] = $this->quiz_model->num_quiz_not_in($data['qids'], 0, 0, '');
+        $data['num_page_not'] = ceil($data['number_qbank_not'] / $data['limit']);
+        $data['qbank_not'] = $this->quiz_model->get_quiz_not_in($data['qids'], 0, 0, '', 10, 0);
+        
+        $data['content'] = $this->load->view('admin/pages/edit_quiz', $data, true);
+        $this->load->view('admin/layouts/main', $data);
+    }
 }
