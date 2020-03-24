@@ -44,8 +44,15 @@ class Self_learning extends CI_Controller {
 			// echo "<pre>";
 			// print_r($data['mcq_fun']);
 			// echo "</pre>";
-			$data['points']= $this->api_model->user_point();			
-			$this->load->view('stemup/self_learning',$data);
+			$data['points']= $this->api_model->user_point();
+			
+			$data['head'] = $this->load->view('action/layout/head', $data, true);
+			$data['leftmenu'] = $this->load->view('action/layout/leftmenu', $data, true);
+			$data['foot'] = $this->load->view('action/layout/footer', $data, true);
+			$data['content'] = $this->load->view("action/pages/self_learning", $data,true);
+			$this->load->view("action/layout/main", $data);
+
+			// $this->load->view('stemup/self_learning',$data);
 
 		} else {
 			redirect('home');
@@ -116,8 +123,13 @@ class Self_learning extends CI_Controller {
 			// print_r($data['result']);
 			// echo "</pre>";
 			// die();
+			$data['head'] = $this->load->view('action/layout/head', $data, true);
+			$data['leftmenu'] = $this->load->view('action/layout/leftmenu', $data, true);
+			$data['foot'] = $this->load->view('action/layout/footer', $data, true);
+			$data['content'] = $this->load->view("action/pages/category_learning", $data,true);
+			$this->load->view("action/layout/main", $data);
 
-			$this->load->view('stemup/category_learning',$data);
+			// $this->load->view('stemup/category_learning',$data);
 		}
 	}
 
