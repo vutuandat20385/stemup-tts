@@ -193,48 +193,50 @@ class Admin extends CI_Controller {
         
     }
 
-    function get_feedback() {
-		
-		$config = array();
-		$config["base_url"] = base_url() . "index.php/admin/get_feedback";
-		$total_row = $this->admin_model->record_count_feedBack();
-		$config["total_rows"] = $total_row;
-		$config["per_page"] = 20;
-		$config['use_page_numbers'] = TRUE;
-		$config['num_links'] = $total_row;
-		$config['cur_tag_open'] = '&nbsp;<a class="current">';
-		$config['cur_tag_close'] = '</a>';
-		$config['next_link'] = 'Next';
-		$config['prev_link'] = 'Previous';
+    function get_feedback()
+    {
 
-		$this->pagination->initialize($config);
-		if($this->uri->segment(3)){
-		    $page = ($this->uri->segment(3)) ;
-		}else{
-		    $page = 1;
-		}
-		$data["list_news"] = $this->admin_model->data_feed_back($config["per_page"], $page);
-		$str_links = $this->pagination->create_links();
-		$data["links"] = explode('&nbsp;',$str_links );
+        $config = array();
+        $config["base_url"] = base_url() . "index.php/admin/get_feedback";
+        $total_row = $this->admin_model->record_count_feedBack();
+        $config["total_rows"] = $total_row;
+        $config["per_page"] = 8;
+        $config['use_page_numbers'] = TRUE;
+        $config['num_links'] = $total_row;
+        $config['cur_tag_open'] = '&nbsp;<a class="current">';
+        $config['cur_tag_close'] = '</a>';
+        $config['next_link'] = 'Next';
+        $config['prev_link'] = 'Previous';
 
-        $data['title']='Feed back người dùng';
+        $this->pagination->initialize($config);
+        if ($this->uri->segment(3)) {
+            $page = ($this->uri->segment(3));
+        } else {
+            $page = 1;
+        }
+        $data["list_news"] = $this->admin_model->data_feed_back($config["per_page"], $page);
+        $str_links = $this->pagination->create_links();
+        $data["links"] = explode('&nbsp;', $str_links);
+
+        $data['title'] = 'Feed back người dùng';
         // $data['topbar'] = $this->load->view('admin/elements/topbar',$data,true);
-        $data['leftmenu'] = $this->load->view('admin/elements/leftmenu',$data,true);
-        $data['head'] = $this->load->view('admin/layouts/head',$data,true);
-        $data['foot'] = $this->load->view('admin/layouts/foot',$data,true);
+        $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
+        $data['head'] = $this->load->view('admin/layouts/head', $data, true);
+        $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
 
         // $this->load->view("admin/feedback_software", $data);
-        $data['content'] = $this->load->view('admin/pages/feedback',$data,true);
+        $data['content'] = $this->load->view('admin/pages/feedback', $data, true);
 
-        $this->load->view('admin/layouts/main',$data);
+        $this->load->view('admin/layouts/main', $data);
     }
     
     function update_feedback_status() {
 		$fid = $this->input->post('fbid');
-		$fstt = $this->input->post('fbstatus');
-		$data["updated"] = $this->admin_model->updateFeedbackStatus($fid, $fstt);
-		$data["feedback"] = $this->admin_model->getFeedBack();
-		$this->load->view("admin/pages/feedback_software_processed", $data);
+		// $fstt = $this->input->post('fbstatus');
+		$data = $this->admin_model->updateFeedbackStatus($fid);
+		// $data["feedback"] = $this->admin_model->getFeedBack();
+        // $this->load->view("admin/pages/feedback_software_processed", $data);
+        print_r($data);
     }
 
     function thongke(){

@@ -66,29 +66,33 @@ class Admin_model extends CI_Model {
         return $data;
     }
     // change feedback status
-	function updateFeedbackStatus($fbid, $fbstatus) {
-		// $sql = "UPDATE feedback SET status = $fbstatus WHERE fbid = $fbid ";
+    function updateFeedbackStatus($fbid, $fbstatus = 0)
+	{
+
+		$this->db->where('fbid', $fbid);
+		$data = $this->db->get('feedback')->result_array();
+		$fbstatus = $data[0]['status'];
 		if ($fbstatus == 0) {
 			$sql = "UPDATE feedback SET status = 1 WHERE fbid = $fbid ";
 			$success = $this->db->query($sql);
 			if ($success) {
-				return "Phản hồi đã được xử lý";
+				return 1;
 			}
 			else {
-				return "Thất bại";
+				return " Thấtbại";
 			}
 		}
 		else if ($fbstatus == 1) {
 			$sql = "UPDATE feedback SET status = 0 WHERE fbid = $fbid ";
 			$success = $this->db->query($sql);
 			if ($success) {
-				return "Phản hồi đã được xử lý";
+				return 0;
 			}
 			else {
 				return "Thất bại";
 			}
 		}
-    }
+	}
     // get feedback from database
 	function getFeedBack() {
 		$query = "SELECT fb.fbid,fb.uid,fb.content,su.email,fb.create_date,ft.type_name,fb.`status` FROM feedback fb

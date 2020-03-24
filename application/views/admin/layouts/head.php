@@ -10,7 +10,7 @@
     <link type="text/css" href="<?php echo base_url('css/admin/bootstrap-theme.min.css'); ?>" rel="stylesheet">
     <link type="text/css" href="<?php echo base_url('css/admin/jquery-ui.css'); ?>" rel="stylesheet">
     <link type="text/css" href="<?php echo base_url('edmin/css/theme.cs'); ?>s" rel="stylesheet">
-    <link type="text/css" href="<?php echo base_url('edmin/images/icons/css/font-awesome.css'); ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url('edmin/bower_components/font-awesome/css/font-awesome.min.css')?>">
     <link type="text/css" href="<?php echo base_url('css/admin/style-admin.css'); ?>" rel="stylesheet">
 
     <script src="<?php echo base_url('ckeditor/ckeditor.js'); ?>" type="text/javascript"></script>

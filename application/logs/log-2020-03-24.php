@@ -101,3 +101,49 @@ ERROR - 2020-03-24 10:23:14 --> Severity: Warning --> Invalid argument supplied 
 ERROR - 2020-03-24 10:23:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1504
 ERROR - 2020-03-24 10:23:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1543
 ERROR - 2020-03-24 10:23:15 --> Severity: Warning --> fopen(C:/xampp/htdocs/application/cache/date_summary.txt): failed to open stream: No such file or directory C:\xampp\htdocs\stemup-tts\application\controllers\Event_racing.php 115
+ERROR - 2020-03-24 10:25:15 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 10:28:07 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 10:28:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-24 10:28:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-24 10:28:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-24 10:28:19 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-24 10:28:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-24 10:28:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-24 10:28:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-24 10:28:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-24 10:28:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-24 10:28:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1504
+ERROR - 2020-03-24 10:28:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1543
+ERROR - 2020-03-24 10:28:27 --> Severity: Warning --> fopen(C:/xampp/htdocs/application/cache/date_summary.txt): failed to open stream: No such file or directory C:\xampp\htdocs\stemup-tts\application\controllers\Event_racing.php 115
+ERROR - 2020-03-24 10:37:27 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 10:43:27 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 10:49:27 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 10:50:55 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 10:51:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-24 10:51:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-24 10:51:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-24 10:51:09 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-24 10:51:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-24 10:51:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-24 10:51:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-24 10:51:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-24 10:51:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-24 10:51:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1504
+ERROR - 2020-03-24 10:51:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1543
+ERROR - 2020-03-24 10:51:15 --> Severity: Warning --> fopen(C:/xampp/htdocs/application/cache/date_summary.txt): failed to open stream: No such file or directory C:\xampp\htdocs\stemup-tts\application\controllers\Event_racing.php 115
+ERROR - 2020-03-24 10:55:35 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 11:01:35 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 11:09:57 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 11:10:03 --> Start-thongke 
+ERROR - 2020-03-24 11:10:33 --> Severity: Error --> Maximum execution time of 30 seconds exceeded C:\xampp\htdocs\stemup-tts\system\database\drivers\mysqli\mysqli_driver.php 311
+ERROR - 2020-03-24 11:15:15 --> Start-thongke 
+ERROR - 2020-03-24 11:15:45 --> Severity: Error --> Maximum execution time of 30 seconds exceeded C:\xampp\htdocs\stemup-tts\system\database\drivers\mysqli\mysqli_driver.php 311
+ERROR - 2020-03-24 11:19:07 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 11:19:15 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 11:19:31 --> Start-thongke 
+ERROR - 2020-03-24 11:20:02 --> Severity: Error --> Maximum execution time of 30 seconds exceeded C:\xampp\htdocs\stemup-tts\system\database\drivers\mysqli\mysqli_driver.php 311
+ERROR - 2020-03-24 11:20:02 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 11:20:02 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 11:20:02 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-24 11:40:22 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-24 11:40:29 --> Cache: Failed to initialize APC; extension not loaded/enabled?
