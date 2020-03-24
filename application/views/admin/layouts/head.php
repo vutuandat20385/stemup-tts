@@ -12,7 +12,7 @@
     <link type="text/css" href="<?php echo base_url('edmin/css/theme.cs'); ?>s" rel="stylesheet">
     <link type="text/css" href="<?php echo base_url('edmin/images/icons/css/font-awesome.css'); ?>" rel="stylesheet">
     <link type="text/css" href="<?php echo base_url('css/admin/style-admin.css'); ?>" rel="stylesheet">
-
+     <script type="text/javascript" src="<?php echo base_url();?>editor/tinymce.min.js"></script>
     <script src="<?php echo base_url('ckeditor/ckeditor.js'); ?>" type="text/javascript"></script>
     <script>
         base_url="<?php echo base_url(); ?>";
