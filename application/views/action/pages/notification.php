@@ -28,7 +28,7 @@
 				?> <?php
 			}else{
 				?>
-				onclick="<?php //echo $dt['click'] ?>"
+				onclick="<?php echo $dt['click'] ?>"
 				 <?php
 			} ?>	
 			>
@@ -47,10 +47,9 @@
 					
 					<div id="name_quiz">
 				   	<p><?php echo "Tên bài:".$dt['quiz_name']?></p>
-				   	
 					</div>
 					<div id="time">
-				   	<p style=""><?php echo $dt['createdate']; ?></p>         
+				   	<p><?php echo $dt['createdate']; ?></p>         
 					</div>
 				</div>
 			</div>

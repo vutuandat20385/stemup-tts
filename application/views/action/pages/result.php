@@ -1,3 +1,12 @@
+<script>
+  var rid = <?php echo $result['rid'] ?>;
+  var base_url = "<?php echo base_url(); ?>";
+  var site_url = "<?php echo site_url(); ?>";
+  var su = "<?php echo $su ?>";
+  var id_mcq_fun = "";
+  var id_quiz_fun = "";
+  var count_question = <?php echo count($questions); ?>;
+</script>
 <section class="row col-md-10 noprint">
     <div class="col-lg-12" id="resinfo" style="background-image:url('<?php echo base_url('images/result_bg.jpg'); ?>');background-size:cover;font-size:18px;padding:15px;color:#ffffff;min-height:auto;">
 
