@@ -408,4 +408,44 @@ class Admin_model extends CI_Model {
         return $mess;
     }
 
+    public function mng_user_list($uid=0, $su=0, $search="",$limit=15,$page=0){
+        $user= $this->session->userdata('logged_in');
+        $this->db->select("*");
+        $this->db->where_in("su", array(1,10));
+        if($uid>0){
+            $this->db->where("uid", $uid);
+        }
+        if($su>0){
+            $this->db->where("su", $su);
+        }
+        if($search!=""){
+            $this->db->like("email", $search);
+            $this->db->or_like("first_name", $search);
+        }
+        $this->db->order_by("uid desc");
+        $this->db->limit($limit);
+        $this->db->offset($limit*$page);
+        $data = $this->db->get("savsoft_users")->result_array();
+
+        return $data;
+    }
+    public function num_mng_user($uid=0, $su=0, $search="",$limit=15,$page=0){
+        $user= $this->session->userdata('logged_in');
+        $this->db->select("*");
+        $this->db->where_in("su", array(1,10));
+        if($uid>0){
+            $this->db->where("uid", $uid);
+        }
+        if($su>0){
+            $this->db->where("su", $su);
+        }
+        if($search!=""){
+            $this->db->like("email", $search);
+            $this->db->or_like("first_name", $search);
+        }
+        $this->db->order_by("uid desc");
+        return $this->db->get("savsoft_users")->num_rows();
+    
+    }
+    
 }

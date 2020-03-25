@@ -894,4 +894,39 @@ class Admin extends CI_Controller {
             echo json_encode($data);
         }
     }
+    
+    function admin_list()
+    {
+        $user = $this->session->userdata('logged_in');   
+        $data['title'] = 'Danh sách nhân viên';
+        $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
+        $data['head'] = $this->load->view('admin/layouts/head', $data, true);
+        $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
+
+        $data['user'] = $this->admin_model->mng_user_list(0, 0, "", 15, 0);
+        $data['num_user'] = $this->admin_model->num_mng_user(0, 0, "", 15, 0);
+        $data['limit'] = 15;
+        $data['page'] = 0;
+        $data['cid'] = 0;
+        $data['lid'] = 0;
+        $data['num_page'] = ceil($data['num_user'] / $data['limit']);
+
+        $data['content'] = $this->load->view('admin/pages/admin_list', $data, true);
+
+        $this->load->view('admin/layouts/main', $data);
+    }
+
+    function get_data_user(){
+		$user= $this->session->userdata('logged_in');
+		if($user){
+			$inp = json_decode($this->input->raw_input_stream,true);
+			$inp['search']=htmlentities($inp['search'], ENT_COMPAT, 'UTF-8');
+			$inp['users']= $this->admin_model->mng_user_list($inp['uid'],$inp['su'],$inp['search'],$inp['limit'],$inp['page']); 
+            $inp['num_user']= $this->admin_model->num_mng_user($inp['uid'],$inp['su'],$inp['search'],$inp['limit'],$inp['page']); 
+			$inp['num_page']=ceil($inp['num_user']/$inp['limit']);
+			header('Content-Type: application/json');
+				
+			echo json_encode($inp);
+		}
+	}
 }

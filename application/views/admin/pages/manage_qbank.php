@@ -5,7 +5,7 @@
 	var id_mcq_fun = "";
 	var id_quiz_fun = "";
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="<?php echo base_url('js/jquery.js')?>"></script>
 <script src="<?php echo base_url('bootstrap/js/bootstrap.min.js'); ?>"></script>
 
 
@@ -17,7 +17,7 @@
 
 <link rel="manifest" href="<?php echo base_url('js/manifest.json'); ?>">
 <script src="<?php echo base_url('js/manage_qbank.js'); ?> "></script>
-<script src="<?php echo base_url('js/moderate_question.js'); ?> "></script>
+<!-- <script src="<?php echo base_url('js/moderate_question.js'); ?> "></script> -->
 <style>
 	.pointer {
 		cursor: pointer;
