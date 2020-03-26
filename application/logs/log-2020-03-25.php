@@ -547,3 +547,75 @@ ERROR - 2020-03-25 17:28:10 --> Cache: Failed to initialize APC; extension not l
 ERROR - 2020-03-25 17:29:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 2095
 ERROR - 2020-03-25 17:29:26 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 2095
 ERROR - 2020-03-25 17:31:50 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 17:40:00 --> 1 Array
+ERROR - 2020-03-25 17:40:00 --> Remember: 
+ERROR - 2020-03-25 17:40:16 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 17:40:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:40:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:40:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:40:30 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:40:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:40:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:40:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:40:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:40:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:40:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1504
+ERROR - 2020-03-25 17:40:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1543
+ERROR - 2020-03-25 17:40:38 --> Severity: Warning --> fopen(C:/xampp/htdocs/application/cache/date_summary.txt): failed to open stream: No such file or directory C:\xampp\htdocs\stemup-tts\application\controllers\Event_racing.php 115
+ERROR - 2020-03-25 17:41:50 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 17:43:04 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 2095
+ERROR - 2020-03-25 17:44:10 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:44:10 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:44:10 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:44:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:44:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:44:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:44:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:44:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:44:19 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 17:44:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:44:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:44:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:44:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:44:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:44:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:44:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:44:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:44:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:44:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1504
+ERROR - 2020-03-25 17:44:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1543
+ERROR - 2020-03-25 17:44:36 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 17:44:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:44:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:44:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:44:50 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 1490
+ERROR - 2020-03-25 17:44:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:44:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:44:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:44:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:44:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 863
+ERROR - 2020-03-25 17:44:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1504
+ERROR - 2020-03-25 17:44:55 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\after_login\home_student.php 1543
+ERROR - 2020-03-25 17:44:55 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 17:44:56 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 17:44:56 --> Severity: Warning --> fopen(C:/xampp/htdocs/application/cache/date_summary.txt): failed to open stream: No such file or directory C:\xampp\htdocs\stemup-tts\application\controllers\Event_racing.php 115
+ERROR - 2020-03-25 17:44:56 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 17:45:01 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 2095
+ERROR - 2020-03-25 17:45:05 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:05 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:05 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:09 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:09 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:09 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:09 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:09 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:09 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:09 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:45:14 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\stemup\result.php 225
+ERROR - 2020-03-25 17:47:04 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 2095
+ERROR - 2020-03-25 17:47:10 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 2095
+ERROR - 2020-03-25 17:47:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\models\Quiz_model.php 2095

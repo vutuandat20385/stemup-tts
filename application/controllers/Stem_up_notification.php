@@ -33,10 +33,10 @@ class Stem_up_notification extends CI_Controller {
                 $data['photo']= base_url('upload/avatar/default.png');
             }
             $data['notify'] = $this->notify_model->notify_all_list();
-            echo'<pre>';
-            print_r($data['notify']);
-            echo'<pre>';
-            die;
+            // echo'<pre>';
+            // print_r($data['notify']);
+            // echo'<pre>';
+            // die;
             $data['head'] = $this->load->view('action/layout/head', $data, true);
 			$data['leftmenu'] = $this->load->view('action/layout/leftmenu', $data, true);
 			$data['foot'] = $this->load->view('action/layout/footer', $data, true);

@@ -22,13 +22,17 @@
 		if (sizeof($notify)!=0){
 			foreach( $notify as $dt ){
 			?>
+
 			<?php if($dt['status']==1){ ?>
-			<div class="col-md-12 box-bor ef" style="border-bottom-style: solid;border-bottom-width: 1px"  onMouseOver="this.style.backgroundColor='#85E2E7'" onMouseOut="this.style.backgroundColor='#FFFFFF'"
+			<a href="<?php 
+				$b =strstr($dt['click'],"index.php/"); 
+				$c = rtrim($b,"'");
+				echo base_url().$c; ?>">
+			<div  class="col-md-12 box-bor ef" style="border-bottom-style: solid;border-bottom-width: 1px"  onMouseOver="this.style.backgroundColor='#85E2E7'" onMouseOut="this.style.backgroundColor='#FFFFFF'"
 			<?php if($su != 2 && $dt['action'] == 'Assign quiz' ){
 				?> <?php
 			}else{
 				?>
-				onclick="<?php echo $dt['click'] ?>"
 				 <?php
 			} ?>	
 			>
@@ -53,6 +57,7 @@
 					</div>
 				</div>
 			</div>
+			</a>
 			<?php
 			}
 		}else{
