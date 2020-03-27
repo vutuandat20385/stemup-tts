@@ -388,6 +388,7 @@ ERROR - 2020-03-25 20:57:03 --> Severity: Warning --> Invalid argument supplied 
 ERROR - 2020-03-25 20:57:03 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\stemup-tts\application\views\admin\pages\admin_list.php 117
 ERROR - 2020-03-25 21:00:15 --> Cache: Failed to initialize APC; extension not loaded/enabled?
 ERROR - 2020-03-25 21:00:17 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+<<<<<<< HEAD
 =======
 ERROR - 2020-03-25 08:40:26 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
 ERROR - 2020-03-25 08:40:26 --> 0 Tên đăng nhập hoặc mật khẩu không đúng!<br> Vui lòng đăng nhập lại!
@@ -938,3 +939,22 @@ ERROR - 2020-03-25 17:29:26 --> Severity: Warning --> Invalid argument supplied 
 ERROR - 2020-03-25 17:31:50 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
 >>>>>>> cf7d9f08a1fc3b56fa981dc681604b39634093cf
 ERROR - 2020-03-25 21:07:06 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+=======
+ERROR - 2020-03-25 21:22:01 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 21:28:30 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 21:32:14 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 21:38:02 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 21:44:11 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 21:50:53 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 21:58:33 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 22:01:16 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 22:02:24 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 22:04:47 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 22:08:19 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 22:11:08 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 22:12:31 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 22:12:37 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 22:12:47 --> Cache: Failed to initialize APC; extension not loaded/enabled?
+ERROR - 2020-03-25 22:17:32 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-03-25 22:26:11 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+>>>>>>> 0419cacea9b713f27c6d350a42313352a0fb558d
