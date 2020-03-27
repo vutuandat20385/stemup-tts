@@ -52,18 +52,6 @@
 <link href="<?php echo base_url('css/setbackground.css'); ?>" rel="stylesheet">
 <link href="<?php echo base_url('css/star-rating.css'); ?>" rel="stylesheet">
 <link href="<?php echo base_url('css/result.css'); ?>" rel="stylesheet">
-
-
-<script>
-    var rid = <?php echo $result['rid'] ?>;
-    var base_url = "<?php echo base_url(); ?>";
-    var site_url = "<?php echo site_url(); ?>";
-    var su = "<?php echo $su ?>";
-    var id_mcq_fun = "";
-    var id_quiz_fun = "";
-    var count_question = <?php echo count($questions); ?>;
-</script>
-
 <script src="<?php echo base_url('js/exercise_assigned_student.js'); ?>"></script>
 <link href="<?php echo base_url('css/card.css'); ?>" rel="stylesheet">
 

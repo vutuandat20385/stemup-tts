@@ -2540,6 +2540,10 @@ Class User_model extends CI_Model{
 	function get_by_cookie($cookie){
         $this->db->where('web_token', $cookie);
         return $this->db->get('savsoft_users');
+	}
+	function get_by_cookie2($cookie){
+        $this->db->where('web_token', $cookie);
+        return $this->db->get('savsoft_users')->row_array();
     }
 
     function update_web_token($data, $id_user) {

@@ -2,7 +2,7 @@
 				<div class="menu_n collapse navbar-collapse pad-0" id="defaultNavbar1">		  
 
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="<?php echo site_url(); ?>">Trang chủ</a></li>
+						<li class="active"><a href="<?php echo site_url('home/index1');?>">Trang chủ</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Về stemup<span class="caret"></span>
 							</a>
