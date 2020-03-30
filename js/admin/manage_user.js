@@ -145,7 +145,7 @@ function redrawusertbl(uid, su, search, limit, page) {
 
 			for (i = 0; i < q.length; i++) {
 				html += '<tr><td>' + q[i]['uid'] + '</td>';
-				html += '<td><b><a class="pointer" onclick="mng_preview_user(' + q[i]['uid'] + ')">' + q[i]['email'] + '</a></b></td>';
+				html += '<td><b><a class="pointer" data-toggle="modal" data-target="#detailuserModal_' + q[i]['uid'] + '">' + q[i]['email'] + '</a></b></td>';
 				html += '<td>' + q[i]['first_name'] + '</td>';
 				// html += '<td><a class="pointer" onclick="drawlv_mng_user_link(' + q[i]['su'] + ')">';
 				html += '<td>';
@@ -157,10 +157,36 @@ function redrawusertbl(uid, su, search, limit, page) {
 				};
 				html += '</td>';
 				html += '<td>';
-				// html += '<a href="" onclick="mdr_preview_user(' + q[i]['qid'] + ')"><i class="pointer text-success fa fa-eye" style="margin-left: 15%;" title="Xem trước"></i></a>';
-
+				html += '<a href="" data-toggle="modal" data-target="#detailuserModal_' + q[i]['uid'] + '"><i class="pointer text-success fa fa-eye" style="margin-left: 15%;" title="Xem trước"></i></a>';
 				html += '<a href="" data-toggle="modal" data-target="#edituserModal_' + q[i]['uid'] + '"><i class="pointer text-warning fa fa-pencil" title="Sửa" style="color: #ef00ff;margin-left: 20%;"></i></a>';
 				html += '<a href=""><i class="pointer fa fa-remove" style="margin-left: 20%;" onclick="delete_user_(' + q[i]['uid'] + ')" title="Xóa"></i></a>';
+				html += '<div class="modal fade" id="detailuserModal_' + q[i]['uid'] + '" role="dialog">';
+				html += '<div class="modal-dialog" style="width:40%">';
+				html += '<div class="modal-content">';
+				html += '<div class="modal-header">';
+				html += '<button type="button" class="close" data-dismiss="modal">&times;</button>;'
+				html += '<h4 class="modal-title">Chi tiết tài khoản ' + q[i]['uid'] + '<span id="qide"><span></h4>';
+				html += '</div>';
+				html += '<div class="modal-body">';
+				html += '<p>ID: <span style="color: blue;">' + q[i]['uid'] + '</span></p>';
+				html += '<p>Email: <span style="color: blue;">' + q[i]['email'] + '</span></p>';
+				html += '<p>Tên người dùng: <span style="color: blue;">' + q[i]['first_name'] + '</span></p>';
+				html += '<p>Chức vụ: <span style="color: blue;">';
+				if (q[i]['su'] == 1) {
+					html += 'Admin';
+				}
+				if (q[i]['su'] == 10) {
+					html += 'Cộng tác viên';
+				};
+				html += '</span></p>';
+				html += '</div>';
+				html += '<div class="modal-footer">';
+				html += '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>';
+				html += '</div>';
+				html += '</div>';
+
+				html += '</div>';
+				html += '</div>';
 				html += '<div class="modal fade" id="edituserModal_' + q[i]['uid'] + '" role="dialog">';
 				html += '<div class="modal-dialog" style="width:40%">';
 
