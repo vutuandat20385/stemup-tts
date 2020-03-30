@@ -21,7 +21,9 @@
         <li><a href="<?php echo base_url('index.php/admin/excel');?>"><i class="icon-inbox"></i>Xuất/Nhập file Câu hỏi trắc nghiệm </a></li>
         <li><a href="<?php echo base_url('index.php/admin/thongke');?>"><i class="icon-inbox"></i>Thống kê đã làm </a></li>
     </ul>
-
+    <ul class="widget widget-menu unstyled">
+        <li><a href="<?php echo site_url('admin/admin_list')?>"><i class="menu-icon icon-bold"></i> Danh sách nhân viên </a></li>
+    </ul>
     <ul class="widget widget-menu unstyled">
         <li><a href="<?php echo base_url('index.php/admin/thong_ke_user');?>"><i class="icon-inbox"></i>Thống kê đăng ký</a></li>
         <li><a href="<?php echo base_url('index.php/admin/get_feedback'); ?>"><i class="menu-icon icon-bold"></i> Phản hồi của người dùng </a></li>

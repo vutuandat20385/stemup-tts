@@ -408,4 +408,106 @@ class Admin_model extends CI_Model {
         return $mess;
     }
 
+    public function mng_user_list($uid=0, $su=0, $search="",$limit=15,$page=0){
+        $user= $this->session->userdata('logged_in');
+        $this->db->select("*");
+        $this->db->where_in("su", array(1,10));
+        if($uid>0){
+            $this->db->where("uid", $uid);
+        }
+        if($su>0){
+            $this->db->where("su", $su);
+        }
+        if($search!=""){
+            $this->db->like("email", $search);
+            $this->db->or_where_in("su", array(1,10));
+            if($uid>0){
+                $this->db->where("uid", $uid);
+            }
+            if($su>0){
+                $this->db->where("su", $su);
+            }
+            $this->db->like("first_name", $search);
+        }
+        $this->db->order_by("uid desc");
+        $this->db->limit($limit);
+        $this->db->offset($limit*$page);
+        $data = $this->db->get("savsoft_users")->result_array();
+
+        return $data;
+    }
+
+    public function num_mng_user($uid=0, $su=0, $search="",$limit=15,$page=0){
+        $user= $this->session->userdata('logged_in');
+        $this->db->select("*");
+        $this->db->where_in("su", array(1,10));
+        if($uid>0){
+            $this->db->where("uid", $uid);
+        }
+        if($su>0){
+            $this->db->where("su", $su);
+        }
+        if($search!=""){
+            $this->db->like("email", $search);
+            $this->db->or_like("first_name", $search);
+        }
+        $this->db->order_by("uid desc");
+        return $this->db->get("savsoft_users")->num_rows();
+    }
+    
+    function delete_user($uid)
+    {
+        $this->db->where('uid', $uid);
+        $this->db->delete('savsoft_users');
+    }
+
+    function edit_user($uid, $email, $first_name, $su, $pass = '')
+    { 
+        if ($pass == '') {
+            $this->db->select("*");
+            $this->db->from('savsoft_users');
+            $this->db->where('uid', $uid);
+            $query = $this->db->get()->result_array();
+            foreach ($query as $row) {
+                $password = $row['password'];
+            }
+        } else {
+            $password = $pass;
+        }
+        $data = [
+            'email' => $email,
+            'first_name' => $first_name,
+            'su' => $su,
+            'password' => $password,
+        ];
+
+        $this->db->where('uid', $uid);
+        if ($this->db->update('savsoft_users', $data)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function num_user_by_email($email)
+    {
+        $this->db->where('email', $email);
+        $query = $this->db->get('savsoft_users');
+        return $query->num_rows();
+    }
+
+    function add_user($email, $first_name, $su, $pass)
+    {
+        $data = [
+            'email' => $email,
+            'first_name' => $first_name,
+            'su' => $su,
+            'password' => $pass,
+        ];
+        if ($this->db->insert('savsoft_users', $data)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
