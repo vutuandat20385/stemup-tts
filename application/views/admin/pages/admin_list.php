@@ -5,7 +5,7 @@
 	var id_mcq_fun = "";
 	var id_quiz_fun = "";
 </script>
-<!-- <script src="<?php echo base_url('js/jquery.js')?>"></script> -->
+<!-- <script src="<?php echo base_url('js/jquery.js') ?>"></script> -->
 <!-- <script src="<?php echo base_url('bootstrap/js/bootstrap.min.js'); ?>"></script> -->
 
 
@@ -77,7 +77,7 @@
 														<label class="form-check-label">Cộng tác viên</label>
 														<input style="margin-left: 10px;" class="form-check-input" type="radio" name="su" id="su" value="1">
 														<label class="form-check-label">Admin</label>
-													</div>													
+													</div>
 												</form>
 											</div>
 											<div class="modal-footer">
@@ -129,7 +129,7 @@
 											</td>
 											<td>
 												<b>
-													<a class="pointer" onclick="mng_preview_user(<?php echo $q['uid'] ?>)">
+													<a class="pointer"  data-toggle="modal" data-target="#detailuserModal_<?php echo $q['uid']; ?>">
 														<?php echo $q['email']; ?>
 													</a>
 												</b>
@@ -146,10 +146,39 @@
 												} ?>
 											</td>
 											<td class="col-xs-1.5">
-												<!-- <a href="" onclick="mdr_preview_user(<?php echo $q['uid'] ?>)"><i class="pointer text-success fa fa-eye" style="margin-left: 15%;" title="Xem trước"></i></a> -->
+												<a href="" data-toggle="modal" data-target="#detailuserModal_<?php echo $q['uid']; ?>"><i class="pointer text-success fa fa-eye" style="margin-left: 15%;" title="Xem trước"></i></a>
 												<a href="" data-toggle="modal" data-target="#edituserModal_<?php echo $q['uid']; ?>"><i class="pointer text-warning fa fa-pencil" title="Sửa" style="color: #ef00ff;margin-left: 20%;"></i></a>
 												<a href=""><i class="pointer fa fa-remove" style="margin-left: 20%;" onclick="delete_user_(<?php echo $q['uid'] ?>)" title="Xóa"></i></a>
 											</td>
+											<!-- chi tiết tài khoản -->
+											<div class="modal fade" id="detailuserModal_<?php echo $q['uid']; ?>" role="dialog">
+												<div class="modal-dialog" style="width:40%">
+													<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">Chi tiết tài khoản <?php echo $q['uid']; ?><span id="qide"><span></h4>
+														</div>
+														<div class="modal-body">
+															<p>ID: <span style="color: blue;"><?php echo $q['uid']; ?></span></p>
+															<p>Email: <span style="color: blue;"><?php echo $q['email']; ?></span></p>
+															<p>Tên người dùng: <span style="color: blue;"><?php echo $q['first_name']; ?></span></p>
+															<p>Chức vụ: <span style="color: blue;"><?php if ($q['su'] == 1) {
+																										echo 'Admin';
+																									}
+																									if ($q['su'] == 10) {
+																										echo 'Cộng tác viên';
+																									} ?></span></p>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+														<!--</form>-->
+													</div>
+
+												</div>
+											</div>
+											<!-- end cho tiết -->
+											<!-- Sửa -->
 											<div class="modal fade" id="edituserModal_<?php echo $q['uid']; ?>" role="dialog">
 												<div class="modal-dialog" style="width:40%">
 													<div class="modal-content">
