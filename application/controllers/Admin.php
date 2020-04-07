@@ -994,7 +994,6 @@ class Admin extends CI_Controller
         $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
         $querytime = '';
         $time = $this->input->post('time');
-        
         if ($user) {
             if ($time == 1 || $time == '') {
                 $data['selected1'] = "selected";

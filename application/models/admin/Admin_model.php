@@ -516,7 +516,7 @@ class Admin_model extends CI_Model {
         $select = "SELECT history_point.id, history_point.uid, SUM(history_point.point_change) AS `point`, history_point.point_remain, history_point.nid,
         history_point.activity, history_point.create_date, history_point.modify_date, savsoft_users.su, savsoft_users.first_name, savsoft_users.email
         FROM history_point INNER JOIN savsoft_users ON history_point.uid = savsoft_users.uid
-        WHERE savsoft_users.su = 2 AND ". $querytime ." GROUP BY uid ORDER BY `point` DESC";
+        WHERE savsoft_users.su = 2 AND ". $querytime ." GROUP BY uid ORDER BY `point` DESC LIMIT 100";
 		$query = $this->db->query($select);
 		$row = $query->result_array();
 		return $row;
