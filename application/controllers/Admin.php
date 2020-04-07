@@ -904,15 +904,15 @@ class Admin extends CI_Controller
         $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
         $data['head'] = $this->load->view('admin/layouts/head', $data, true);
         $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
-
-        $data['user'] = $this->admin_model->mng_user_list(0, 0, "", 15, 0);
-        $data['num_user'] = $this->admin_model->num_mng_user(0, 0, "", 15, 0);
-        $data['limit'] = 15;
-        $data['page'] = 0;
-        $data['cid'] = 0;
-        $data['lid'] = 0;
-        $data['num_page'] = ceil($data['num_user'] / $data['limit']);
-
+        if ($user) {
+            $data['user'] = $this->admin_model->mng_user_list(0, 0, "", 15, 0);
+            $data['num_user'] = $this->admin_model->num_mng_user(0, 0, "", 15, 0);
+            $data['limit'] = 15;
+            $data['page'] = 0;
+            $data['cid'] = 0;
+            $data['lid'] = 0;
+            $data['num_page'] = ceil($data['num_user'] / $data['limit']);
+        }
         $data['content'] = $this->load->view('admin/pages/admin_list', $data, true);
 
         $this->load->view('admin/layouts/main', $data);
@@ -953,13 +953,13 @@ class Admin extends CI_Controller
             $err = '';
             $pass = '';
             if (!empty($this->input->post('password'))) {
-                $password = $this->input->post('password');               
+                $password = $this->input->post('password');
                 $pass = md5($password);
             }
             if ($this->admin_model->edit_user($uid, $email, $first_name, $su, $pass) == true) {
                 $this->session->set_flashdata('message', 'Sửa tài khoản thành công!');
                 $err = '0';
-            }else{
+            } else {
                 $err = '1';
             }
             echo $err;
@@ -980,9 +980,38 @@ class Admin extends CI_Controller
                     $this->session->set_flashdata('message', 'Thêm tài khoản thành công!');
                     echo '0';
                 }
-            }else {
+            } else {
                 echo '1';
             }
         }
+    }
+    function thongke_point($time = '')
+    {
+        $user = $this->session->userdata('logged_in');
+        $data['title'] = 'Thống kê điểm';
+        $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
+        $data['head'] = $this->load->view('admin/layouts/head', $data, true);
+        $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
+        $querytime = '';
+        $time = $this->input->post('time');
+        
+        if ($user) {
+            if ($time == 1 || $time == '') {
+                $data['selected1'] = "selected";
+                $querytime = "DATE_FORMAT(create_date, '%Y-%m-%d') = CURDATE()";
+            }
+            if ($time == 2) {
+                $data['selected2'] = "selected";
+                $querytime = "YEARWEEK(create_date) = YEARWEEK(NOW())";
+            }
+            if ($time == 3) {
+                $data['selected3'] = "selected";
+                $querytime = "MONTH(create_date)= MONTH(NOW())";
+            } 
+            $data['point'] = $this->admin_model->danhsach_point($querytime);
+        }
+
+        $data['content'] = $this->load->view('admin/pages/thongke_point', $data, true);
+        $this->load->view('admin/layouts/main', $data);
     }
 }
