@@ -996,18 +996,21 @@ class Admin extends CI_Controller
         $time = $this->input->post('time');
         if ($user) {
             if ($time == 1 || $time == '') {
+                $limit = 10;
                 $data['selected1'] = "selected";
                 $querytime = "DATE_FORMAT(create_date, '%Y-%m-%d') = CURDATE()";
             }
             if ($time == 2) {
+                $limit = 20;
                 $data['selected2'] = "selected";
                 $querytime = "YEARWEEK(create_date) = YEARWEEK(NOW())";
             }
             if ($time == 3) {
+                $limit = 30;
                 $data['selected3'] = "selected";
                 $querytime = "MONTH(create_date)= MONTH(NOW())";
             } 
-            $data['point'] = $this->admin_model->danhsach_point($querytime);
+            $data['point'] = $this->admin_model->danhsach_point($querytime, $limit);
         }
 
         $data['content'] = $this->load->view('admin/pages/thongke_point', $data, true);

@@ -523,3 +523,4 @@ ERROR - 2020-04-07 13:04:33 --> Severity: Warning --> Illegal string offset 'poi
 ERROR - 2020-04-07 13:05:11 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
 ERROR - 2020-04-07 13:18:18 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
 ERROR - 2020-04-07 13:24:25 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-04-07 13:42:58 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
