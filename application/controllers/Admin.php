@@ -574,13 +574,14 @@ class Admin extends CI_Controller
         $data['user'] = $user;
         if ($user['su'] == 1) {
 
-            $data['title'] = 'Bảng thống kê đăng ký tài khoản';
+            $data['title'] = 'Bảng thống kê đăng ký tài khoản trong vòng 30 ngày';
             $data['leftmenu'] = $this->load->view('admin/elements/leftmenu', $data, true);
             $data['head'] = $this->load->view('admin/layouts/head', $data, true);
             $data['foot'] = $this->load->view('admin/layouts/foot', $data, true);
 
             $data['user'] = $this->admin_model->get_user();
-
+            $data['user_l30day']= $this->admin_model->get_user_l30day();
+            $data['user_cr30day']= $this->admin_model->get_user_cr30day();
             $data['content'] = $this->load->view('admin/pages/thong_ke_user', $data, true);
             $this->load->view('admin/layouts/main', $data);
         } else {
@@ -1008,7 +1009,7 @@ class Admin extends CI_Controller
             if ($time == 3) {
                 $limit = 30;
                 $data['selected3'] = "selected";
-                $querytime = "MONTH(create_date)= MONTH(NOW())";
+                $querytime = "MONTH(create_date)= MONTH(NOW()) AND YEAR(t.Date) = YEAR(NOW())";
             } 
             $data['point'] = $this->admin_model->danhsach_point($querytime, $limit);
         }

@@ -297,15 +297,39 @@ class Admin_model extends CI_Model {
     function get_user(){
 		$sql = "SELECT t.Date, t.totalNewUsers, x.totalNewParents, (t.totalNewUsers - x.totalNewParents) totalNewStudents 
 		FROM ( SELECT DATE(registered_date) Date, COUNT(DISTINCT uid) totalNewUsers 
-		FROM quiz.savsoft_users GROUP BY DATE(registered_date) ) AS t LEFT JOIN 
+		FROM quiz.savsoft_users GROUP BY DATE(registered_date) DESC ) AS t LEFT JOIN 
 		( SELECT DATE(registered_date) Date, COUNT(DISTINCT uid) totalNewParents 
-		FROM quiz.savsoft_users where su ='4' GROUP BY DATE(registered_date) ) AS x USING(Date) LIMIT 30";
+		FROM quiz.savsoft_users where su ='4' GROUP BY DATE(registered_date) DESC ) AS x USING(Date) LIMIT 30";
 		$query=$this->db->query($sql);
 		if($query->num_rows() > 0){
 			return $query->result_array();
 		}else
 			return false;
     }
+
+    function get_user_l30day()
+    {   
+        $sql = "SELECT DATE(registered_date) Date, COUNT(DISTINCT uid) totalNewUsers_l30day 
+        FROM quiz.savsoft_users  GROUP BY DATE(registered_date) ORDER BY DATE(registered_date) DESC LIMIT 30,30 ";
+		$query=$this->db->query($sql);
+		if($query->num_rows() > 0){
+			return $query->result_array();
+		}else
+            return false;
+    }
+
+    function get_user_cr30day()
+    {   
+        $sql = "SELECT DATE(registered_date) Date, COUNT(DISTINCT uid) totalNewUsers_cr30day 
+        FROM quiz.savsoft_users GROUP BY DATE(registered_date) ORDER BY DATE(registered_date) DESC LIMIT 30 ";
+
+		$query=$this->db->query($sql);
+		if($query->num_rows() > 0){
+			return $query->result_array();
+		}else
+            return false;
+    }
+
     function get_new($id)
     {
         $sql = "select * from savsoft_news where id = $id";

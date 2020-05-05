@@ -16,6 +16,17 @@
         </div>
     </div>
 </div>
+
+<div class="col-xs-12 p0">
+<h2 style="padding-top: 20px;">Bảng thống kê đăng ký tài khoản trong vòng 60 ngày</h2>
+    <div class="box">
+        <div class="box-body">
+            <div style="width:75%;">
+                <canvas id="canvas2"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
     var config = {
         type: 'line',
@@ -23,7 +34,7 @@
         data: {
             labels: [<?php foreach ($user as $row) {
                             $date = strtotime($row['Date']);
-                            $row['Date'] = date('m-d', $date);
+                            $row['Date'] = date('d-m-Y', $date);
                             echo "'" . $row['Date'] . "', ";
                         } ?>],
             datasets: [{
@@ -75,10 +86,62 @@
         }
     };
 
+    var config2 = {
+        type: 'line',
+
+        data: {
+            labels: [<?php
+                $date_lm = array();
+                foreach ($user_cr30day as $row) {
+                    $date = strtotime($row['Date']);
+                    $row['Date'] = date('d-m-Y', $date);
+                    echo "'" .  $row['Date'] . "', ";
+                }
+                ?> ],
+            datasets: [{
+                label: '30 ngày trước nữa',
+                backgroundColor: window.chartColors.blue,
+                borderColor: window.chartColors.blue,
+                data: [
+                    <?php foreach ($user_l30day as $row) {
+                        echo "'" . $row['totalNewUsers_l30day'] . "', ";
+                    }?>
+                ],
+                fill: false,
+            }, {
+                label: '30 ngày trước',
+                fill: false,
+                backgroundColor: window.chartColors.red,
+                borderColor: window.chartColors.red,
+                data: [
+                    <?php foreach ($user_cr30day as $row) {
+                        echo "'" . $row['totalNewUsers_cr30day'] . "', ";
+                    } ?>
+                ],
+            }]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: 'Bảng thống kê'
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        min: 0,
+                        max: 200
+                    }
+                }]
+            }
+        }
+    };
 
 
     window.onload = function() {
         var ctx = document.getElementById('canvas').getContext('2d');
+        var ctx2 = document.getElementById('canvas2').getContext('2d');
         window.myLine = new Chart(ctx, config);
+        window.myLine = new Chart(ctx2, config2);
     };
 </script>
