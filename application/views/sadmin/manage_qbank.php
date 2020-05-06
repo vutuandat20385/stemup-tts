@@ -8,8 +8,8 @@
 		var id_mcq_fun="";
 		var id_quiz_fun="";
 	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-	<script src="<?php echo base_url('bootstrap/js/bootstrap.min.js');?>"></script>
+	<script src="<?php echo base_url('js/jquery.js')?>"></script>
+	<!-- <script src="<?php echo base_url('bootstrap/js/bootstrap.min.js');?>"></script> -->
 
  <!-- fontawesome css -->
  <link href="<?php echo base_url('font-awesome/css/font-awesome.css');?>" rel="stylesheet">

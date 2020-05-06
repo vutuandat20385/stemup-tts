@@ -10,7 +10,7 @@
 <div class="col-xs-12 p0">
     <div class="box">
         <div class="box-body">
-            <div style="width:75%;">
+            <div style="width: 100%;">
                 <canvas id="canvas"></canvas>
             </div>
         </div>
@@ -21,7 +21,7 @@
 <h2 style="padding-top: 20px;">Bảng thống kê đăng ký tài khoản trong vòng 60 ngày</h2>
     <div class="box">
         <div class="box-body">
-            <div style="width:75%;">
+            <div style="width:100%;">
                 <canvas id="canvas2"></canvas>
             </div>
         </div>
@@ -29,7 +29,7 @@
 </div>
 <script>
     var config = {
-        type: 'line',
+        type: 'bar',
 
         data: {
             labels: [<?php foreach ($user as $row) {
@@ -38,12 +38,12 @@
                             echo "'" . $row['Date'] . "', ";
                         } ?>],
             datasets: [{
-                label: 'Tổng',
-                backgroundColor: window.chartColors.red,
-                borderColor: window.chartColors.red,
+                label: 'Học sinh',
+                backgroundColor: window.chartColors.yellow,
+                borderColor: window.chartColors.yellow,
                 data: [
                     <?php foreach ($user as $row) {
-                        echo "'" . $row['totalNewUsers'] . "', ";
+                        echo "'" . $row['totalNewStudents'] . "', ";
                     } ?>
                 ],
                 fill: false,
@@ -58,13 +58,13 @@
                     } ?>
                 ],
             }, {
-                label: 'Học sinh',
+                label: 'Tổng',
                 fill: false,
-                backgroundColor: window.chartColors.yellow,
-                borderColor: window.chartColors.yellow,
+                backgroundColor: window.chartColors.red,
+                borderColor: window.chartColors.red,
                 data: [
                     <?php foreach ($user as $row) {
-                        echo "'" . $row['totalNewStudents'] . "', ";
+                        echo "'" . $row['totalNewUsers'] . "', ";
                     } ?>
                 ],
             }]
@@ -79,7 +79,7 @@
                 yAxes: [{
                     ticks: {
                         min: 0,
-                        max: 200
+                        max: 100
                     }
                 }]
             }
@@ -130,7 +130,7 @@
                 yAxes: [{
                     ticks: {
                         min: 0,
-                        max: 200
+                        max: 100
                     }
                 }]
             }

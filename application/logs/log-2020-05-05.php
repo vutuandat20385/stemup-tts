@@ -11,3 +11,6 @@ ERROR - 2020-05-05 10:41:14 --> Severity: Warning --> session_id(): Cannot chang
 ERROR - 2020-05-05 10:48:44 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
 ERROR - 2020-05-05 10:58:48 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
 ERROR - 2020-05-05 11:04:51 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-05-05 11:19:21 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-05-05 11:29:03 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
+ERROR - 2020-05-05 11:37:45 --> Severity: Warning --> session_id(): Cannot change session id when session is active C:\xampp\htdocs\stemup-tts\application\libraries\Session.php 53
